@@ -1,0 +1,54 @@
+.resume-row {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.resume-time {
+  width: 130px;
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  font-weight: 400;
+  line-height: 21px;
+  flex-shrink: 0;
+  font-family: "Instrument Sans", sans-serif;
+}
+
+.resume-details {
+  width: 470px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.resume-title {
+  margin: 0;
+  color: var(--text-main);
+  font-size: var(--text-md);
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: "Instrument Sans", sans-serif;
+}
+
+
+.resume-location {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  font-weight: 400;
+  line-height: 21px;
+  font-family: "Instrument Sans", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .resume-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .resume-time,
+  .resume-details {
+    width: 100%;
+  }
+}
