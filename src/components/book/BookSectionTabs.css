@@ -1,0 +1,195 @@
+/* Aligned with InteractiveBook: recto paper, folio type, soft inset shadows */
+
+.book-section-tabs {
+  --tab-paper-a: hsl(42 35% 97%);
+  --tab-paper-b: hsl(40 25% 99%);
+  --tab-paper-crease: hsl(40 18% 92%);
+  --tab-edge: hsl(220 10% 82%);
+  --tab-edge-soft: hsl(220 8% 90%);
+  --tab-text: hsl(220 12% 22%);
+  --tab-text-muted: hsl(220 8% 44%);
+  --tab-shadow-inset: rgba(0, 0, 0, 0.045);
+  --tab-shadow-drop: rgba(0, 0, 0, 0.07);
+
+  position: relative;
+  width: 100%;
+  max-width: min(92vw, 1200px);
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+
+.book-section-tabs--on-book {
+  max-width: none;
+  margin: 0;
+  --tab-pad-radius: 6px 6px 0 0;
+  --tab-label-radius: 0 0 6px 6px;
+}
+
+.book-section-tabs--on-cover {
+  max-width: none;
+  margin: 0;
+  --tab-paper-a: hsl(42 38% 98%);
+  --tab-paper-b: hsl(44 32% 96%);
+  --tab-paper-crease: hsl(42 24% 90%);
+  --tab-edge: hsl(42 12% 78%);
+  --tab-edge-soft: hsl(42 10% 86%);
+  --tab-shadow-drop: rgba(12, 18, 35, 0.22);
+  filter: drop-shadow(0 4px 14px rgba(10, 14, 28, 0.4));
+}
+
+.book-section-tabs__rail {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 13px;
+  border-radius: 5px 5px 0 0;
+  background: linear-gradient(
+    180deg,
+    hsl(40 25% 97%) 0%,
+    hsl(40 16% 90%) 45%,
+    hsl(40 12% 84%) 100%
+  );
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -1px 2px var(--tab-shadow-inset);
+  pointer-events: none;
+}
+
+/* Fore-edge texture like .ib-page-edges */
+.book-section-tabs__rail::after {
+  content: "";
+  position: absolute;
+  inset: 3px 4px 0;
+  border-radius: 3px 3px 0 0;
+  opacity: 0.35;
+  background: repeating-linear-gradient(
+    to bottom,
+    hsl(40 25% 98%) 0px,
+    hsl(40 25% 98%) 1.5px,
+    hsl(40 12% 90%) 1.5px,
+    hsl(40 12% 90%) 2px
+  );
+  pointer-events: none;
+}
+
+.book-section-tabs--on-cover .book-section-tabs__rail {
+  background: linear-gradient(
+    180deg,
+    hsl(42 32% 96%) 0%,
+    hsl(40 22% 88%) 100%
+  );
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.85),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.book-section-tabs__row {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 2px;
+  padding: 0 4px 9px;
+}
+
+.book-section-tabs__tab {
+  position: relative;
+  appearance: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  flex: 0 1 auto;
+  min-height: 44px;
+}
+
+.book-section-tabs__tab:focus-visible {
+  outline: 2px solid hsl(220 22% 42%);
+  outline-offset: 2px;
+}
+
+.book-section-tabs__tab-pad {
+  display: block;
+  height: 7px;
+  border-radius: var(--tab-pad-radius, 6px 6px 0 0);
+  margin: 0 1px;
+  background: linear-gradient(180deg, var(--tab-paper-b) 0%, var(--tab-paper-crease) 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  transition: height 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-section-tabs__label {
+  display: block;
+  padding: 9px 12px 11px;
+  margin-top: -1px;
+  border-radius: var(--tab-label-radius, 0 0 6px 6px);
+  font-family: "Source Serif 4", serif;
+  font-size: 13px;
+  font-weight: 600;
+  font-variant-numeric: oldstyle-nums;
+  letter-spacing: 0.03em;
+  color: var(--tab-text-muted);
+  background: linear-gradient(to right, var(--tab-paper-a), var(--tab-paper-b));
+  border: 1px solid var(--tab-edge-soft);
+  border-top: none;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.75),
+    inset -1px 0 0 rgba(255, 255, 255, 0.25),
+    0 1px 2px var(--tab-shadow-drop);
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.book-section-tabs__tab:hover .book-section-tabs__label {
+  color: var(--tab-text);
+  border-color: var(--tab-edge);
+  background: linear-gradient(to right, hsl(42 38% 98%), hsl(40 28% 99%));
+}
+
+.book-section-tabs__tab--active .book-section-tabs__tab-pad {
+  height: 10px;
+  background: linear-gradient(180deg, var(--tab-paper-a) 0%, var(--tab-paper-b) 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+.book-section-tabs__tab--active .book-section-tabs__label {
+  padding-top: 10px;
+  padding-bottom: 12px;
+  color: var(--tab-text);
+  border-color: var(--tab-edge);
+  background: linear-gradient(to right, hsl(42 40% 99%), hsl(40 30% 100%));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 2px 5px var(--tab-shadow-drop);
+  transform: translateY(-1px);
+}
+
+.book-section-tabs--on-cover .book-section-tabs__label {
+  color: hsl(220 14% 26%);
+  border-color: hsl(42 14% 72%);
+}
+
+.book-section-tabs--on-cover .book-section-tabs__tab:hover .book-section-tabs__label {
+  color: hsl(220 16% 18%);
+}
+
+.book-section-tabs--on-cover .book-section-tabs__tab--active .book-section-tabs__label {
+  border-color: hsl(38 12% 62%);
+}
+
+@media (max-width: 640px) {
+  .book-section-tabs__row {
+    gap: 2px;
+    padding: 0 2px 7px;
+  }
+
+  .book-section-tabs__label {
+    padding: 7px 9px 9px;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+  }
+}

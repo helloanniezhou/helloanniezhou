@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import MediaVisual from "./MediaVisual";
 import "./ProjectCard.css";
 
 function ProjectCard({
@@ -9,7 +10,8 @@ function ProjectCard({
   imageSrc,
   imageAlt,
   comingSoon = false,
-  titleLight = false
+  titleLight = false,
+  bookPage
 }) {
   const content = (
     <article className="project-card">
@@ -17,7 +19,7 @@ function ProjectCard({
         {comingSoon ? (
           <div className="project-card-coming-soon">Coming soon</div>
         ) : (
-          <img src={imageSrc} alt={imageAlt} className="project-card-image" />
+          <MediaVisual src={imageSrc} alt={imageAlt} className="project-card-image" />
         )}
       </div>
 
@@ -28,6 +30,11 @@ function ProjectCard({
           dangerouslySetInnerHTML={{ __html: description }}
         />
       </div>
+      {typeof bookPage === "number" ? (
+        <span className="project-card-folio" aria-hidden="true">
+          {bookPage}
+        </span>
+      ) : null}
     </article>
   );
 

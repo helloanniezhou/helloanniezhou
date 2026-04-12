@@ -5,10 +5,12 @@
 }
 
 .project-card {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding-bottom: 22px;
   transition: transform 0.25s ease;
 }
 
@@ -35,10 +37,16 @@
   color: var(--accent);
   font-size: 34px;
   font-weight: 500;
-  font-family: "Instrument Sans", sans-serif;
 }
 
 .project-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card-media video.project-card-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -54,9 +62,8 @@
 .project-card-title {
   margin: 0;
   color: var(--text-main);
-  font-size: var(--space-3);
-  font-weight: 700;
-  font-family: "Instrument Sans", sans-serif;
+  font-size:  var(--text-md);
+  font-weight: 500;
 }
 
 .project-card-title.is-light {
@@ -67,14 +74,25 @@
 .project-card-description {
   margin: 0;
   color: var(--text-muted);
-  font-size: var(--text-md);
+  font-size: var(--text-sm);
   font-weight: 400;
   line-height: 1.4;
-  font-family: "Instrument Sans", sans-serif;
 }
 
 .project-card-description .highlight {
   color: var(--accent);
+}
+
+.project-card-folio {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-family: "Source Serif 4", serif;
+  font-size: 12px;
+  font-weight: 500;
+  font-variant-numeric: oldstyle-nums;
+  color: hsl(240 8% 44%);
+  letter-spacing: 0.03em;
 }
 
 @media (max-width: 960px) {

@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Flipping Animation</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #1a1a2e;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+  }
+
+  .scene {
+    perspective: 1200px;
+    width: 340px;
+    height: 460px;
+    position: relative;
+  }
+
+  .book {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(-2deg) rotateX(5deg);
+  }
+
+  /* Book spine shadow */
+  .book::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    width: 10px;
+    height: 80%;
+    background: rgba(0,0,0,0.3);
+    transform: translateX(-50%);
+    filter: blur(8px);
+    z-index: 0;
+  }
+
+  .cover-back {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    background: linear-gradient(135deg, #8B4513, #654321);
+    border-radius: 0 6px 6px 0;
+    transform-origin: left center;
+    transform-style: preserve-3d;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.4);
+    z-index: 0;
+  }
+
+  .cover-back::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0.15) 0%, transparent 20%);
+    border-radius: 0 6px 6px 0;
+  }
+
+  .cover-front {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    background: linear-gradient(135deg, #a0522d, #8B4513);
+    border-radius: 0 6px 6px 0;
+    transform-origin: left center;
+    transform-style: preserve-3d;
+    z-index: 100;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.5);
+  }
+
+  .cover-front .front-face {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #a0522d, #8B4513);
+    border-radius: 0 6px 6px 0;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .cover-front .front-face .title {
+    font-family: 'Playfair Display', serif;
+    color: #f0d68a;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    letter-spacing: 1px;
+  }
+
+  .cover-front .front-face .author {
+    font-family: 'Lora', serif;
+    color: #deb76e;
+    font-size: 12px;
+    margin-top: 12px;
+    font-style: italic;
+  }
+
+  .cover-front .front-face .ornament {
+    width: 60px;
+    height: 2px;
+    background: #f0d68a;
+    margin: 15px 0;
+    border-radius: 1px;
+  }
+
+  .cover-front::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0.15) 0%, transparent 20%);
+    border-radius: 0 6px 6px 0;
+    backface-visibility: hidden;
+  }
+
+  .page {
+    position: absolute;
+    width: 50%;
+    height: calc(100% - 6px);
+    top: 3px;
+    right: 0;
+    transform-origin: left center;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1.0);
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .page-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 0 4px 4px 0;
+    padding: 30px 20px 30px 25px;
+    overflow: hidden;
+  }
+
+  .page-front {
+    background: linear-gradient(to right, #f5f0e8, #faf6ef);
+    box-shadow: inset -2px 0 8px rgba(0,0,0,0.05);
+  }
+
+  .page-front::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.06), transparent);
+  }
+
+  .page-back {
+    background: linear-gradient(to left, #f5f0e8, #faf6ef);
+    transform: rotateY(180deg);
+    box-shadow: inset 2px 0 8px rgba(0,0,0,0.05);
+  }
+
+  .page-back::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0,0,0,0.06), transparent);
+  }
+
+  .page-number {
+    position: absolute;
+    bottom: 15px;
+    font-family: 'Lora', serif;
+    font-size: 11px;
+    color: #999;
+  }
+
+  .page-front .page-number { right: 20px; }
+  .page-back .page-number { left: 20px; }
+
+  .page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #3a3a3a;
+    margin-bottom: 14px;
+    line-height: 1.3;
+  }
+
+  .page-text {
+    font-family: 'Lora', serif;
+    font-size: 10.5px;
+    line-height: 1.75;
+    color: #4a4a4a;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .page-text p {
+    text-indent: 20px;
+    margin-bottom: 8px;
+  }
+
+  .page.flipped {
+    transform: rotateY(-180deg);
+    z-index: 50;
+  }
+
+  .page.dragging, .cover-front.dragging {
+    transition: none !important;
+  }
+
+  /* Left side static pages */
+  .left-pages {
+    position: absolute;
+    width: 50%;
+    height: calc(100% - 6px);
+    top: 3px;
+    left: 0;
+    background: linear-gradient(to left, #f5f0e8, #ede8df);
+    border-radius: 4px 0 0 4px;
+    box-shadow: inset 2px 0 8px rgba(0,0,0,0.05);
+    z-index: 0;
+    padding: 30px 25px 30px 20px;
+    overflow: hidden;
+  }
+
+  .left-pages::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0,0,0,0.06), transparent);
+  }
+
+  .left-page-content {
+    display: none;
+  }
+  .left-page-content.active {
+    display: block;
+  }
+
+  /* Page edges effect */
+  .page-edges {
+    position: absolute;
+    width: 50%;
+    height: calc(100% - 10px);
+    top: 5px;
+    right: 0;
+    background: repeating-linear-gradient(
+      to bottom,
+      #faf6ef 0px,
+      #faf6ef 2px,
+      #e8e3db 2px,
+      #e8e3db 2.5px
+    );
+    border-radius: 0 3px 3px 0;
+    z-index: 0;
+    transform: translateX(1px);
+  }
+
+  .left-page-edges {
+    position: absolute;
+    width: 50%;
+    height: calc(100% - 10px);
+    top: 5px;
+    left: 0;
+    background: repeating-linear-gradient(
+      to bottom,
+      #faf6ef 0px,
+      #faf6ef 2px,
+      #e8e3db 2px,
+      #e8e3db 2.5px
+    );
+    border-radius: 3px 0 0 3px;
+    z-index: 0;
+    transform: translateX(-1px);
+  }
+
+  /* Controls */
+  .controls {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 200;
+  }
+
+  .btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.06);
+    color: rgba(255,255,255,0.7);
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(4px);
+  }
+
+  .btn:hover {
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    border-color: rgba(255,255,255,0.25);
+  }
+
+  .btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .page-indicator {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    font-weight: 400;
+    min-width: 80px;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+
+  .hint {
+    position: fixed;
+    bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: rgba(255,255,255,0.25);
+    letter-spacing: 0.3px;
+    user-select: none;
+  }
+
+  .page, .cover-front {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Shadow under book */
+  .book-shadow {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 30px;
+    background: radial-gradient(ellipse, rgba(0,0,0,0.35) 0%, transparent 70%);
+    filter: blur(5px);
+  }
+
+  /* Ambient light effect */
+  .ambient {
+    position: fixed;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 400px;
+    background: radial-gradient(ellipse, rgba(160,130,90,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="ambient"></div>
+
+<div class="scene">
+  <div class="book" id="book">
+    <div class="book-shadow"></div>
+    <div class="left-page-edges"></div>
+    <div class="left-pages" id="leftPages"></div>
+    <div class="page-edges"></div>
+    <div class="cover-back"></div>
+    <!-- Pages injected by JS -->
+    <div class="cover-front" id="coverFront">
+      <div class="front-face">
+        <div class="ornament"></div>
+        <div class="title">The Art of<br>Wandering</div>
+        <div class="author">Eleanor Voss</div>
+        <div class="ornament"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="controls">
+  <button class="btn" id="prevBtn" disabled>‹</button>
+  <div class="page-indicator" id="pageIndicator">Cover</div>
+  <button class="btn" id="nextBtn">›</button>
+</div>
+
+<div class="hint">Drag, click, or use arrow keys to flip pages</div>
+
+<script>
+const bookContent = [
+  {
+    front: { title: "Chapter I", subtitle: "The First Step", text: `<p>She had always believed that the most important journeys began not with a destination in mind, but with the simple courage to leave the familiar behind.</p><p>The morning light fell through the window in long amber ribbons, casting warmth across the wooden floor of the tiny apartment she had called home for seven years.</p><p>Today was the last day.</p>` },
+    back: { text: `<p>Her suitcase stood by the door — not the sleek rolling kind travelers prefer, but a battered leather case inherited from her grandmother, its surface a constellation of scratches and faded stickers from places she'd never been.</p><p>"Porto," she read softly, tracing the edge of a peeling label. "One day."</p><p>She checked the clock. The train would leave in two hours.</p>` }
+  },
+  {
+    front: { text: `<p>The station was a cathedral of noise and motion. Voices echoed off the vaulted iron ceiling, mingling with the rhythmic announcements that floated from unseen speakers like fragments of half-remembered prayers.</p><p>She found her platform and stood at its edge, watching the silver tracks converge in the distance until they became a single trembling line.</p><p>A man beside her was reading a book, its cover faded beyond recognition.</p>` },
+    back: { text: `<p>"Excuse me," she said, surprising herself. "Where are you headed?"</p><p>He looked up — eyes the color of winter seas — and smiled as though the question were the most natural thing in the world.</p><p>"Wherever this takes me," he said, holding up the book. "Chapter twelve says I should go south."</p><p>She laughed. It was the first real laugh she'd felt in months, unexpected and bright, like finding a coin in old coat pockets.</p>` }
+  },
+  {
+    front: { title: "Chapter II", subtitle: "The Crossing", text: `<p>The train slid through countryside she had only ever seen in paintings — rolling fields of green and gold, divided by ancient stone walls that curved over the hills like sentences written by the earth itself.</p><p>She pressed her forehead against the cool glass and watched the world blur into watercolor.</p>` },
+    back: { text: `<p>Somewhere between sleep and waking, she became aware of the rhythm — the gentle percussion of wheels on track, a lullaby mechanical and precise.</p><p>When she opened her eyes, the landscape had changed. Mountains rose in the distance, their peaks lost in clouds, and the air that seeped through the cracked window carried the scent of pine and cold stone.</p><p>She was getting closer to something she couldn't yet name.</p>` }
+  },
+  {
+    front: { text: `<p>The small town appeared without warning — a cluster of terracotta roofs nestled in a valley so green it seemed painted. The train slowed, then stopped, as if it too wanted to linger.</p><p>She stepped onto the platform and felt the silence like a physical thing, soft and encompassing.</p><p>A hand-painted sign read: "Bem-vindo." Welcome.</p>` },
+    back: { text: `<p>The inn was small, its walls thick with centuries of whitewash, its windows framing views of terraced vineyards that cascaded down to a river she could hear but not yet see.</p><p>An old woman led her to a room at the top of narrow stairs. The bed was simple, the sheets crisp with lavender. A single window opened onto the evening sky, now turning shades of amber and violet.</p><p>"This," she whispered to no one, "is where the story begins."</p>` }
+  },
+  {
+    front: { title: "Chapter III", subtitle: "The Garden", text: `<p>Morning arrived with birdsong — not the cautious chirping of city sparrows, but a full chorus, wild and exuberant, as though the birds themselves were telling stories they'd saved all winter.</p><p>She dressed and walked out into the garden behind the inn.</p>` },
+    back: { text: `<p>The garden was impossibly beautiful, not in a manicured way, but in the way of things that had been left to grow according to their own wisdom. Jasmine climbed old stone walls, roses spilled over iron gates, and a fig tree stood at the center, its broad leaves casting pools of green shadow.</p><p>She sat beneath it with her notebook and, for the first time in years, began to write.</p><p>The words came slowly at first, then all at once — like rain after drought.</p>` }
+  }
+];
+
+const book = document.getElementById('book');
+const coverFront = document.getElementById('coverFront');
+const leftPages = document.getElementById('leftPages');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const pageIndicator = document.getElementById('pageIndicator');
+
+let currentPage = -1; // -1 = cover shown
+const totalPages = bookContent.length;
+let isAnimating = false;
+
+// Create pages
+bookContent.forEach((content, i) => {
+  const page = document.createElement('div');
+  page.className = 'page';
+  page.style.zIndex = totalPages - i;
+  page.dataset.index = i;
+
+  const frontHTML = `
+    <div class="page-face page-front">
+      ${content.front.title ? `<div class="page-title">${content.front.title}${content.front.subtitle ? `<br><span style="font-weight:400;font-size:12px;color:#777;">${content.front.subtitle}</span>` : ''}</div>` : ''}
+      <div class="page-text">${content.front.text}</div>
+      <div class="page-number">${i * 2 + 1}</div>
+    </div>
+  `;
+
+  const backHTML = `
+    <div class="page-face page-back">
+      <div class="page-text">${content.back.text}</div>
+      <div class="page-number">${i * 2 + 2}</div>
+    </div>
+  `;
+
+  page.innerHTML = frontHTML + backHTML;
+  page.addEventListener('click', () => {
+    if (!isAnimating) flipNext();
+  });
+
+  book.insertBefore(page, coverFront);
+});
+
+// Create left page contents
+bookContent.forEach((content, i) => {
+  const leftContent = document.createElement('div');
+  leftContent.className = 'left-page-content';
+  leftContent.dataset.index = i;
+  leftContent.innerHTML = `
+    <div class="page-text">${content.back.text}</div>
+    <div class="page-number" style="position:absolute;bottom:15px;left:20px;">${i * 2 + 2}</div>
+  `;
+  leftPages.appendChild(leftContent);
+});
+
+const pages = document.querySelectorAll('.page');
+
+function updateIndicator() {
+  if (currentPage === -1) {
+    pageIndicator.textContent = 'Cover';
+  } else if (currentPage >= totalPages) {
+    pageIndicator.textContent = 'End';
+  } else {
+    pageIndicator.textContent = `${currentPage * 2 + 1} — ${currentPage * 2 + 2}`;
+  }
+  prevBtn.disabled = currentPage < 0;
+  nextBtn.disabled = currentPage >= totalPages - 1;
+}
+
+function updateLeftPage() {
+  document.querySelectorAll('.left-page-content').forEach(el => el.classList.remove('active'));
+  if (currentPage >= 0) {
+    const prev = document.querySelector(`.left-page-content[data-index="${currentPage}"]`);
+    if (prev) prev.classList.add('active');
+  }
+}
+
+function flipNext() {
+  if (isAnimating) return;
+
+  if (currentPage === -1) {
+    // Open cover
+    isAnimating = true;
+    coverFront.style.transition = 'transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1.0)';
+    coverFront.style.transform = 'rotateY(-180deg)';
+    coverFront.style.zIndex = 0;
+    currentPage = 0;
+    updateIndicator();
+    updateLeftPage();
+    setTimeout(() => { isAnimating = false; }, 900);
+    return;
+  }
+
+  if (currentPage < totalPages) {
+    isAnimating = true;
+    const page = pages[currentPage];
+    page.classList.add('flipped');
+    currentPage++;
+    updateIndicator();
+    setTimeout(() => {
+      updateLeftPage();
+      isAnimating = false;
+    }, 800);
+  }
+}
+
+function flipPrev() {
+  if (isAnimating) return;
+
+  if (currentPage === 0) {
+    // Close cover
+    isAnimating = true;
+    coverFront.style.transform = 'rotateY(0deg)';
+    coverFront.style.zIndex = 100;
+    currentPage = -1;
+    updateIndicator();
+    updateLeftPage();
+    setTimeout(() => { isAnimating = false; }, 900);
+    return;
+  }
+
+  if (currentPage > 0) {
+    isAnimating = true;
+    currentPage--;
+    const page = pages[currentPage];
+    page.classList.remove('flipped');
+    updateIndicator();
+    setTimeout(() => {
+      updateLeftPage();
+      isAnimating = false;
+    }, 800);
+  }
+}
+
+nextBtn.addEventListener('click', flipNext);
+prevBtn.addEventListener('click', flipPrev);
+
+coverFront.addEventListener('click', () => {
+  if (!isAnimating && currentPage === -1) flipNext();
+});
+
+// Keyboard controls
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight' || e.key === 'd') flipNext();
+  if (e.key === 'ArrowLeft' || e.key === 'a') flipPrev();
+});
+
+// --- Drag-to-flip gesture ---
+let dragState = null;
+
+function getPointerX(e) {
+  return e.touches ? e.touches[0].clientX : e.clientX;
+}
+
+function getPointerY(e) {
+  return e.touches ? e.touches[0].clientY : e.clientY;
+}
+
+function getDragTarget() {
+  if (currentPage === -1) {
+    return { el: coverFront, type: 'cover', direction: 'next' };
+  }
+  return null; // we decide direction on drag
+}
+
+function getPageRight() {
+  // the next page to flip forward (currently visible, unflipped)
+  if (currentPage >= 0 && currentPage < totalPages) {
+    return pages[currentPage];
+  }
+  return null;
+}
+
+function getPageLeft() {
+  // the last flipped page (to flip back)
+  if (currentPage > 0) {
+    return pages[currentPage - 1];
+  }
+  return null;
+}
+
+const scene = document.querySelector('.scene');
+
+function onDragStart(e) {
+  if (isAnimating) return;
+  const startX = getPointerX(e);
+  const startY = getPointerY(e);
+
+  // Determine which element and direction based on where drag starts
+  const sceneRect = scene.getBoundingClientRect();
+  const bookCenterX = sceneRect.left + sceneRect.width / 2;
+  const relX = startX - bookCenterX;
+
+  let targetEl = null;
+  let direction = null;
+
+  if (currentPage === -1) {
+    // Only cover is showing — drag right side to open
+    if (relX >= -20) {
+      targetEl = coverFront;
+      direction = 'next';
+    }
+    return startDrag(e, targetEl, direction, startX, startY);
+  }
+
+  if (relX > 0) {
+    // Dragging on right side -> flip forward
+    targetEl = getPageRight();
+    direction = 'next';
+  } else {
+    // Dragging on left side -> flip backward
+    if (currentPage === 0) {
+      targetEl = coverFront;
+      direction = 'prev-cover';
+    } else {
+      targetEl = getPageLeft();
+      direction = 'prev';
+    }
+  }
+
+  startDrag(e, targetEl, direction, startX, startY);
+}
+
+function startDrag(e, targetEl, direction, startX, startY) {
+  if (!targetEl || !direction) return;
+
+  e.preventDefault();
+  dragState = {
+    el: targetEl,
+    direction,
+    startX,
+    startY,
+    started: false,
+    angle: direction === 'prev' || direction === 'prev-cover' ? -180 : 0
+  };
+}
+
+function onDragMove(e) {
+  if (!dragState) return;
+
+  const currentX = getPointerX(e);
+  const dx = currentX - dragState.startX;
+
+  // Require minimum 5px movement to start
+  if (!dragState.started) {
+    if (Math.abs(dx) < 5) return;
+    dragState.started = true;
+    dragState.el.classList.add('dragging');
+    isAnimating = true;
+  }
+
+  e.preventDefault();
+
+  // Map horizontal drag distance to rotation angle
+  const sceneRect = scene.getBoundingClientRect();
+  const maxDrag = sceneRect.width * 0.5;
+  const progress = Math.max(0, Math.min(1, Math.abs(dx) / maxDrag));
+
+  let angle;
+  if (dragState.direction === 'next') {
+    // Dragging left: 0 -> -180
+    const clampedDx = Math.min(0, dx);
+    const p = Math.max(0, Math.min(1, Math.abs(clampedDx) / maxDrag));
+    angle = -180 * p;
+  } else if (dragState.direction === 'prev' || dragState.direction === 'prev-cover') {
+    // Dragging right: -180 -> 0
+    const clampedDx = Math.max(0, dx);
+    const p = Math.max(0, Math.min(1, clampedDx / maxDrag));
+    angle = -180 + 180 * p;
+  }
+
+  dragState.angle = angle;
+  dragState.el.style.transform = `rotateY(${angle}deg)`;
+}
+
+function onDragEnd(e) {
+  if (!dragState) return;
+  if (!dragState.started) {
+    dragState = null;
+    return;
+  }
+
+  const el = dragState.el;
+  const direction = dragState.direction;
+  const angle = dragState.angle;
+
+  el.classList.remove('dragging');
+
+  // Decide whether to commit or cancel based on threshold (past 50%)
+  const threshold = -90;
+  let commit = false;
+
+  if (direction === 'next') {
+    commit = angle < threshold;
+  } else {
+    commit = angle > threshold;
+  }
+
+  // Animate to final position
+  const duration = '0.45s';
+  const easing = 'cubic-bezier(0.4, 0, 0.2, 1)';
+
+  if (direction === 'next') {
+    if (commit) {
+      // Complete the flip forward
+      if (el === coverFront) {
+        el.style.transition = `transform ${duration} ${easing}`;
+        el.style.transform = 'rotateY(-180deg)';
+        el.style.zIndex = 0;
+        currentPage = 0;
+      } else {
+        el.style.transition = `transform ${duration} ${easing}`;
+        el.classList.add('flipped');
+        el.style.transform = '';
+        currentPage++;
+      }
+      updateIndicator();
+      setTimeout(() => {
+        updateLeftPage();
+        el.style.transition = '';
+        isAnimating = false;
+      }, 500);
+    } else {
+      // Snap back
+      el.style.transition = `transform ${duration} ${easing}`;
+      if (el === coverFront) {
+        el.style.transform = 'rotateY(0deg)';
+      } else {
+        el.style.transform = 'rotateY(0deg)';
+      }
+      setTimeout(() => {
+        el.style.transform = '';
+        el.style.transition = '';
+        isAnimating = false;
+      }, 500);
+    }
+  } else if (direction === 'prev-cover') {
+    if (commit) {
+      // Close cover
+      el.style.transition = `transform ${duration} ${easing}`;
+      el.style.transform = 'rotateY(0deg)';
+      el.style.zIndex = 100;
+      currentPage = -1;
+      updateIndicator();
+      updateLeftPage();
+      setTimeout(() => {
+        el.style.transition = '';
+        isAnimating = false;
+      }, 500);
+    } else {
+      // Snap back open
+      el.style.transition = `transform ${duration} ${easing}`;
+      el.style.transform = 'rotateY(-180deg)';
+      setTimeout(() => {
+        el.style.transition = '';
+        isAnimating = false;
+      }, 500);
+    }
+  } else if (direction === 'prev') {
+    if (commit) {
+      // Complete flip back
+      el.style.transition = `transform ${duration} ${easing}`;
+      el.classList.remove('flipped');
+      el.style.transform = '';
+      currentPage--;
+      updateIndicator();
+      setTimeout(() => {
+        updateLeftPage();
+        el.style.transition = '';
+        isAnimating = false;
+      }, 500);
+    } else {
+      // Snap back to flipped
+      el.style.transition = `transform ${duration} ${easing}`;
+      el.style.transform = 'rotateY(-180deg)';
+      setTimeout(() => {
+        el.style.transform = '';
+        el.style.transition = '';
+        isAnimating = false;
+      }, 500);
+    }
+  }
+
+  dragState = null;
+}
+
+// Mouse events
+scene.addEventListener('mousedown', onDragStart);
+window.addEventListener('mousemove', onDragMove);
+window.addEventListener('mouseup', onDragEnd);
+
+// Touch events
+scene.addEventListener('touchstart', onDragStart, { passive: false });
+window.addEventListener('touchmove', onDragMove, { passive: false });
+window.addEventListener('touchend', onDragEnd);
+
+updateIndicator();
+</script>
+</body>
+</html>

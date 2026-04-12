@@ -10,10 +10,14 @@ import ProjectFeatureRow from "../components/project/ProjectFeatureRow";
 import ProjectMediaCard from "../components/project/ProjectMediaCard";
 import ProjectImpactStat from "../components/project/ProjectImpactStat";
 import ProjectPillarCard from "../components/project/ProjectPillarCard";
+import MediaVisual from "../components/MediaVisual";
+import BookSpread from "../components/BookSpread";
+import { projectPageForSlug } from "../lib/bookFolio";
 import "../components/project/ProjectDetailShared.css";
 
-function FitbitProjectPage() {
+function FitbitProjectPage({ folio }) {
   return (
+    <BookSpread chapter="Case study" folio={folio} variant="folio">
     <main className="project-detail-page">
       <BackPillLink to="/" label="Back" />
 
@@ -30,7 +34,7 @@ function FitbitProjectPage() {
       </section>
 
       <div className="project-image-block">
-        <img src={fitbitDetail.images.hero} alt="Fitness for Fitbit hero visual" />
+        <MediaVisual src={fitbitDetail.images.hero} alt="Fitness for Fitbit hero visual" />
       </div>
 
       <hr className="project-divider" />
@@ -45,7 +49,7 @@ function FitbitProjectPage() {
       />
 
       <div className="project-image-block">
-        <img src={fitbitDetail.images.strategy} alt="Product and design strategy visual" />
+        <MediaVisual src={fitbitDetail.images.strategy} alt="Product and design strategy visual" />
       </div>
       <p className="project-caption">
         I co-created the product and design strategy for the fitness area on watch.
@@ -74,7 +78,7 @@ function FitbitProjectPage() {
 
       <section className="project-two-up">
         <article className="project-two-up-item">
-          <img src={fitbitDetail.images.customRun} alt="Build your custom run flow" />
+          <MediaVisual src={fitbitDetail.images.customRun} alt="Build your custom run flow" />
           <p>
             <strong>Build your custom run.</strong>
             <br />
@@ -83,7 +87,7 @@ function FitbitProjectPage() {
           </p>
         </article>
         <article className="project-two-up-item">
-          <img src={fitbitDetail.images.coaching} alt="In-workout coaching flow" />
+          <MediaVisual src={fitbitDetail.images.coaching} alt="In-workout coaching flow" />
           <p>
             <strong>In-workout coaching to keep you on track.</strong>
             <br />
@@ -114,11 +118,13 @@ function FitbitProjectPage() {
 
       <ProjectSection title="Impact" body={fitbitDetail.finalImpact} />
     </main>
+    </BookSpread>
   );
 }
 
-function GenericProjectPage({ project }) {
+function GenericProjectPage({ project, folio }) {
   return (
+    <BookSpread chapter="Case study" folio={folio} variant="folio">
     <main className="project-detail-page">
       <BackPillLink to="/" label="Back" />
       <section className="project-hero">
@@ -127,11 +133,13 @@ function GenericProjectPage({ project }) {
       </section>
       <ProjectSection title="Overview" body={project.description} />
     </main>
+    </BookSpread>
   );
 }
 
-function GoogleGoProjectPage() {
+function GoogleGoProjectPage({ folio }) {
   return (
+    <BookSpread chapter="Case study" folio={folio} variant="folio">
     <main className="project-detail-page">
       <BackPillLink to="/" label="Back" />
 
@@ -209,11 +217,13 @@ function GoogleGoProjectPage() {
         </div>
       </section>
     </main>
+    </BookSpread>
   );
 }
 
-function AirwallexProjectPage() {
+function AirwallexProjectPage({ folio }) {
   return (
+    <BookSpread chapter="Case study" folio={folio} variant="folio">
     <main className="project-detail-page">
       <BackPillLink to="/" label="Back" />
 
@@ -230,7 +240,7 @@ function AirwallexProjectPage() {
       </section>
 
       <div className="project-image-block">
-        <img src={airwallexDetail.images.hero} alt="Airwallex payment link product preview" />
+        <MediaVisual src={airwallexDetail.images.hero} alt="Airwallex payment link product preview" />
       </div>
 
       <hr className="project-divider" />
@@ -241,8 +251,8 @@ function AirwallexProjectPage() {
       <ProjectSection title="Understand the problem space" body={airwallexDetail.problemSpace} />
 
       <section className="project-image-row">
-        <img src={airwallexDetail.images.problemLeft} alt="Merchant research insight visual" />
-        <img src={airwallexDetail.images.problemRight} alt="Regional fit research visual" />
+        <MediaVisual src={airwallexDetail.images.problemLeft} alt="Merchant research insight visual" />
+        <MediaVisual src={airwallexDetail.images.problemRight} alt="Regional fit research visual" />
       </section>
 
       <ProjectSection title="Define product strategy" body={airwallexDetail.strategy} />
@@ -271,6 +281,7 @@ function AirwallexProjectPage() {
         </div>
       </section>
     </main>
+    </BookSpread>
   );
 }
 
@@ -282,17 +293,19 @@ function ProjectDetailPage() {
     return <Navigate to="/" replace />;
   }
 
+  const folio = projectPageForSlug(slug, projects);
+
   if (slug === "fitness-for-fitbit") {
-    return <FitbitProjectPage />;
+    return <FitbitProjectPage folio={folio} />;
   }
   if (slug === "google-go") {
-    return <GoogleGoProjectPage />;
+    return <GoogleGoProjectPage folio={folio} />;
   }
   if (slug === "airwallex") {
-    return <AirwallexProjectPage />;
+    return <AirwallexProjectPage folio={folio} />;
   }
 
-  return <GenericProjectPage project={project} />;
+  return <GenericProjectPage project={project} folio={folio} />;
 }
 
 export default ProjectDetailPage;

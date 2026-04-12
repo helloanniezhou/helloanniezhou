@@ -1,4 +1,5 @@
 import React from "react";
+import MediaVisual from "../MediaVisual";
 import "./ProjectDetailShared.css";
 
 function ProjectFeatureRow({ title, description, imageSrc, imageAlt, reverse = false }) {
@@ -8,7 +9,7 @@ function ProjectFeatureRow({ title, description, imageSrc, imageAlt, reverse = f
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
-      <img src={imageSrc} alt={imageAlt} className="project-feature-image" />
+      <MediaVisual src={imageSrc} alt={imageAlt} className="project-feature-image" />
     </article>
   );
 }
