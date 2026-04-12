@@ -4,7 +4,7 @@ import projects from "../data/projects";
 
 function WorkPage() {
   return (
-    <main className="content content-work">
+    <div className="content content-work">
       <section className="work-hero">
         <h1 className="work-title">Annie Zhou</h1>
         <p className="work-subtitle">
@@ -33,7 +33,7 @@ function WorkPage() {
           />
         ))}
       </section>
-    </main>
+    </div>
   );
 }
 

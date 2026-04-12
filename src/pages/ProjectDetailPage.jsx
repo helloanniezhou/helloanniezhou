@@ -14,7 +14,7 @@ import "../components/project/ProjectDetailShared.css";
 
 function FitbitProjectPage() {
   return (
-    <main className="project-detail-page">
+    <div className="project-detail-page">
       <BackPillLink to="/" label="Back" />
 
       <section className="project-hero">
@@ -113,26 +113,26 @@ function FitbitProjectPage() {
       <hr className="project-divider" />
 
       <ProjectSection title="Impact" body={fitbitDetail.finalImpact} />
-    </main>
+    </div>
   );
 }
 
 function GenericProjectPage({ project }) {
   return (
-    <main className="project-detail-page">
+    <div className="project-detail-page">
       <BackPillLink to="/" label="Back" />
       <section className="project-hero">
         <h1>{project.title}</h1>
         <p>{project.year || "Case study coming soon"}</p>
       </section>
       <ProjectSection title="Overview" body={project.description} />
-    </main>
+    </div>
   );
 }
 
 function GoogleGoProjectPage() {
   return (
-    <main className="project-detail-page">
+    <div className="project-detail-page">
       <BackPillLink to="/" label="Back" />
 
       <section className="project-hero">
@@ -208,13 +208,13 @@ function GoogleGoProjectPage() {
           />
         </div>
       </section>
-    </main>
+    </div>
   );
 }
 
 function AirwallexProjectPage() {
   return (
-    <main className="project-detail-page">
+    <div className="project-detail-page">
       <BackPillLink to="/" label="Back" />
 
       <section className="project-hero">
@@ -270,7 +270,7 @@ function AirwallexProjectPage() {
           />
         </div>
       </section>
-    </main>
+    </div>
   );
 }
 

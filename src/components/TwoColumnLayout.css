@@ -1,0 +1,175 @@
+/* Two columns: row of flex columns. Three type sizes, black + grey only. */
+
+.tc {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 3.5rem;
+  width: 100%;
+}
+
+.tc-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  flex: 0 0 auto;
+  min-width: 7.5rem;
+}
+
+.tc-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.tc-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tc-stack--tight {
+  gap: 0.2rem;
+}
+
+.tc-h {
+  margin: 0;
+  font-size: var(--tc-m);
+  font-weight: 600;
+  color: var(--tc-black);
+}
+
+.tc-a {
+  font-size: var(--tc-s);
+  font-weight: 400;
+  color: var(--tc-grey);
+  text-decoration: none;
+}
+
+.tc-a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.tc-a--on {
+  color: var(--tc-black);
+  font-weight: 600;
+}
+
+/* Markdown column: three sizes only */
+.md {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 36rem;
+}
+
+.md h1 {
+  margin: 0 0 1rem;
+  font-size: var(--tc-l);
+  font-weight: 700;
+  color: var(--tc-black);
+  line-height: 1.2;
+}
+
+.md > p {
+  margin: 0 0 1.75rem;
+  font-size: var(--tc-m);
+  font-weight: 400;
+  color: var(--tc-grey);
+  line-height: 1.55;
+}
+
+.md h2 {
+  margin: 0 0 0.75rem;
+  font-size: var(--tc-s);
+  font-weight: 600;
+  color: var(--tc-grey);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.md h2:not(:first-of-type) {
+  margin-top: 1.75rem;
+}
+
+.md a {
+  color: var(--tc-grey);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.md a:hover {
+  color: var(--tc-black);
+}
+
+.md .md-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  margin-bottom: 1.1rem;
+}
+
+.md .md-item:last-child {
+  margin-bottom: 0;
+}
+
+.md .md-time {
+  font-size: var(--tc-s);
+  color: var(--tc-grey);
+}
+
+.md .md-title {
+  margin: 0;
+  font-size: var(--tc-m);
+  font-weight: 600;
+  color: var(--tc-black);
+  line-height: 1.35;
+}
+
+.md .md-place {
+  font-size: var(--tc-s);
+  color: var(--tc-grey);
+}
+
+.tc-foot {
+  margin-top: 3rem;
+  font-size: var(--tc-s);
+  color: var(--tc-grey);
+}
+
+.tc-foot p {
+  margin: 0;
+}
+
+.page--twocol {
+  --tc-s: 12px;
+  --tc-m: 15px;
+  --tc-l: 28px;
+  --tc-black: #000;
+  --tc-grey: #666;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  align-items: stretch;
+  background: #fff;
+  min-height: 100dvh;
+  box-sizing: border-box;
+}
+
+html:has(.page--twocol),
+body:has(.page--twocol) {
+  background: #fff;
+}
+
+@media (max-width: 640px) {
+  .tc {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
