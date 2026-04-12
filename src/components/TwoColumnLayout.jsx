@@ -11,7 +11,7 @@ export default function TwoColumnLayout() {
     <div className="tc">
       <nav className="tc-side" aria-label="Site">
         <div className="tc-stack">
-          <span className="tc-h">Projects</span>
+          <span className="tc-a disabled">Projects</span>
           <ul className="tc-stack tc-stack--tight">
             <li>
               <NavLink to="/projects/fitness-for-fitbit" className={linkClass}>
@@ -41,7 +41,7 @@ export default function TwoColumnLayout() {
           </NavLink>
         </div>
         <div className="tc-stack">
-          <NavLink to="/about" className={linkClass}>
+          <NavLink to="/" end className={linkClass}>
             About
           </NavLink>
         </div>

@@ -4,9 +4,11 @@ import "./ProjectDetailShared.css";
 
 function BackPillLink({ to = "/", label = "Back" }) {
   return (
-    <Link to={to} className="project-back-pill">
-      <span aria-hidden="true">←</span> {label}
-    </Link>
+    <nav aria-label="Back">
+      <Link to={to}>
+        <span aria-hidden="true">←</span> {label}
+      </Link>
+    </nav>
   );
 }
 

@@ -14,6 +14,11 @@
   gap: 1.25rem;
   flex: 0 0 auto;
   min-width: 7.5rem;
+  position: sticky;
+  top: 1.5rem;
+  align-self: flex-start;
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
 }
 
 .tc-body {
@@ -33,12 +38,13 @@
 }
 
 .tc-stack--tight {
-  gap: 0.2rem;
+  padding-left: 0.5rem;
+  gap: 0.3rem;
 }
 
 .tc-h {
   margin: 0;
-  font-size: var(--tc-m);
+  font-size: var(--tc-s);
   font-weight: 600;
   color: var(--tc-black);
 }
@@ -50,9 +56,14 @@
   text-decoration: none;
 }
 
+.tc-a disabled {
+  color: var(--tc-grey);
+  text-decoration: none;
+}
+
 .tc-a:hover {
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  text-decoration: none;
+  color: var(--tc-black);
 }
 
 .tc-a--on {
@@ -110,12 +121,12 @@
 .md .md-item {
   display: flex;
   flex-direction: column;
-  gap: 0.1rem;
-  margin-bottom: 1.1rem;
+  gap: 0.3rem;
+  margin-bottom: 1.3rem;
 }
 
 .md .md-item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 .md .md-time {
@@ -126,9 +137,8 @@
 .md .md-title {
   margin: 0;
   font-size: var(--tc-m);
-  font-weight: 600;
   color: var(--tc-black);
-  line-height: 1.35;
+  line-height: 1.4;
 }
 
 .md .md-place {
@@ -147,18 +157,17 @@
 }
 
 .page--twocol {
-  --tc-s: 12px;
-  --tc-m: 15px;
-  --tc-l: 28px;
+  --tc-s: 14px;
+  --tc-m: 16px;
+  --tc-l: 24px;
+  --tc-xl: 30px;
   --tc-black: #000;
   --tc-grey: #666;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   max-width: 52rem;
   margin: 0 auto;
-  padding: 3rem 1.5rem 4rem;
+  padding: 3rem;
   align-items: stretch;
-  background: #fff;
-  min-height: 100dvh;
   box-sizing: border-box;
 }
 
@@ -167,9 +176,48 @@ body:has(.page--twocol) {
   background: #fff;
 }
 
+/* Artwork: single column, same tokens as .md */
+.artwork-page .artwork-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.artwork-page .artwork-figure {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0;
+}
+
+.artwork-page .artwork-figure img {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.artwork-page .artwork-figure figcaption {
+  margin: 0;
+  font-size: var(--tc-s, 14px);
+  color: var(--tc-grey, #666);
+  line-height: 1.45;
+}
+
+.artwork-page .artwork-code {
+  font-size: var(--tc-s, 14px);
+  color: var(--tc-black, #000);
+}
+
 @media (max-width: 640px) {
   .tc {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .tc-side {
+    position: static;
+    max-height: none;
+    overflow-y: visible;
+    align-self: stretch;
   }
 }

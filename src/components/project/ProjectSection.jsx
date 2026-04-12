@@ -1,11 +1,11 @@
 import React from "react";
 import "./ProjectDetailShared.css";
 
-function ProjectSection({ title, body, className = "" }) {
+function ProjectSection({ title, children }) {
   return (
-    <section className={`project-section ${className}`}>
-      <h2 className="project-section-title">{title}</h2>
-      <p className="project-section-body" dangerouslySetInnerHTML={{ __html: body }} />
+    <section>
+      <h2>{title}</h2>
+      {children}
     </section>
   );
 }

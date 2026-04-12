@@ -1,15 +1,13 @@
 import React from "react";
 import "./ProjectDetailShared.css";
 
-function ProjectFeatureRow({ title, description, imageSrc, imageAlt, reverse = false }) {
+function ProjectFeatureRow({ title, description, imageSrc, imageAlt }) {
   return (
-    <article className={`project-feature-row ${reverse ? "is-reverse" : ""}`}>
-      <div className="project-feature-copy">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-      <img src={imageSrc} alt={imageAlt} className="project-feature-image" />
-    </article>
+    <section>
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <img src={imageSrc} alt={imageAlt} />
+    </section>
   );
 }
 

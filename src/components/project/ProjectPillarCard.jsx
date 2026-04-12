@@ -3,12 +3,10 @@ import "./ProjectDetailShared.css";
 
 function ProjectPillarCard({ emoji, text }) {
   return (
-    <article className="project-pillar-card">
-      <div className="project-pillar-emoji" aria-hidden="true">
-        {emoji}
-      </div>
+    <li>
+      <i aria-hidden="true">{emoji}</i>
       <p>{text}</p>
-    </article>
+    </li>
   );
 }
 

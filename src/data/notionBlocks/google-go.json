@@ -1,0 +1,549 @@
+{
+  "sourcePageId": "340bef17e03580a59b27cdd340bf93e1",
+  "fetchedAt": "2026-04-12T21:57:12.877Z",
+  "blocks": [
+    {
+      "id": "340bef17-e035-8070-acee-f2ad71eca57d",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "2017 — 2019",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-8086-8acd-f2d2dad8531d",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Overview",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-800e-ac90-fb278b395c6c",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Google Go is a lightweight search app built for first-time smartphone users in regions like India and Sub-Saharan Africa. I led the design of key features that made Google Search more accessible for users with low literacy and digital fluency.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "\n",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-809b-b82c-d90a0b2413f3",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Role",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-80ff-b5ca-ee67b15509d6",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "UX designer for onboarding and user education.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-80d8-b29b-dfa6f17b42f3",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Team",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-80e8-9e56-f97a754d7a15",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "I was in a group of 6 UXers, 2 PMs, and a team of engineers.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "\n",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-805e-b393-c75e6158e17e",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Results",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-80e3-8403-e7d0f63adfb1",
+      "type": "bulleted_list_item",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Karaoke mode reached X% of Google Go Search DAU with 1X% weekly retention, and earned a UK patent for its invention.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "340bef17-e035-8077-a314-fa1aeadde839",
+      "type": "bulleted_list_item",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Mini Learning videos drove a measurable lift, increasing feature usage by up to 1X%.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "\n",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "340bef17-e035-807a-b42c-eb4313e31742",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Challenge",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-8055-a39d-fa0737447cd4",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Traditional Google Search was too text-heavy and minimalist for users unfamiliar with digital interfaces.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-8065-99bc-ed684159c639",
+      "type": "quote",
+      "richText": [
+        {
+          "type": "text",
+          "text": "How might we make Google Go intuitive for new internet users in the emerging markets? ",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-80df-a017-f176dbbb7205",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Karaoke mode reads out the page aloud to help people read\n",
+          "bold": false,
+          "italic": true,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-803d-9c95-e32ac94d30e0",
+      "type": "image",
+      "url": "/notion-images/google-go/340bef17e035803d9c95e32ac94d30e0.gif",
+      "caption": []
+    },
+    {
+      "id": "340bef17-e035-801d-8fab-f2165626e8df",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "A language onboarding I designed to help Indian users set the app at first go\n",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-80b7-81b7-ef5932678f5d",
+      "type": "image",
+      "url": "/notion-images/google-go/340bef17e03580b781b7ef5932678f5d.gif",
+      "caption": []
+    },
+    {
+      "id": "340bef17-e035-80fd-9fb4-e2a8b1f0d41e",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Mini learnings are short videos to help users learn what to do in the app.\nA sample mini-learning video",
+          "bold": false,
+          "italic": true,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-80ea-aaa9-ef22351654c3",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Process",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-8039-8304-daaeb0de9aa9",
+      "type": "numbered_list_item",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Ground the design in real user needs: ",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "Partnered with researchers on in-home visits across India and Nigeria. We observed how first-time smartphone users navigated digital content, revealing critical gaps in literacy, confidence, and comprehension.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "340bef17-e035-805c-9705-d8eb9f45501b",
+      "type": "numbered_list_item",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Prototype solutions: ",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "Collaborated with PMs and engineers to ideate and prototype audio-first interactions and simplified UI patterns. I created high-fidelity, interactive prototypes to test with low-literacy users in rapid research sessions.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "340bef17-e035-8012-8f04-e429d47858a2",
+      "type": "numbered_list_item",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Launch, learn, and scale: ",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "Post-launch, we monitored DAU, retention, and feature adoption weekly. These insights directly informed design iterations, content strategy, and future onboarding flows.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "\n",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "340bef17-e035-8061-8307-e7ef02f6f14e",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Impact",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-80ab-9a38-ea3159804f23",
+      "type": "bulleted_list_item",
+      "richText": [
+        {
+          "type": "text",
+          "text": "DAU & retention: ",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "Karaoke mode reached X% of Google Go Search DAU with 1X% weekly retention.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "340bef17-e035-80a3-ac79-e4017922ce32",
+      "type": "bulleted_list_item",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Feature usage: ",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "Mini Learning videos increased feature usage by up to 1X%.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "340bef17-e035-802a-8faa-c4e1f4577c38",
+      "type": "bulleted_list_item",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Patent: ",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "Earned a UK patent for the Karaoke mode design.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "340bef17-e035-804f-89d9-c62fe8fcf63c",
+      "type": "paragraph",
+      "richText": []
+    }
+  ]
+}

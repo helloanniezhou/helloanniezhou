@@ -1,0 +1,202 @@
+/*
+ * Notion JSON blocks: share TwoColumnLayout .md column tokens and patterns
+ * (.page--twocol defines --tc-s/m/l, --tc-black, --tc-grey; .md sets h1/h2/p and links).
+ */
+
+article.project-doc .notion-blocks.md {
+  max-width: 40rem;
+}
+
+article.project-doc .notion-block {
+  margin: 0.2rem 0;
+}
+
+/* h1 / h2 / direct paragraphs: inherit from TwoColumnLayout.css .md h1, .md h2, .md > p */
+
+/* h3: not defined in .md — match body scale, black */
+article.project-doc .notion-blocks.md .notion-h3 {
+  margin: 0;
+  font-size: var(--tc-m, 16px);
+  font-weight: 600;
+  color: var(--tc-black, #000);
+  line-height: 1.35;
+}
+}
+
+article.project-doc .notion-blocks.md > .notion-h3:first-child {
+  margin-top: 0;
+}
+
+article.project-doc .notion-blocks.md > .notion-h3 ~ .notion-h3 {
+  margin-top: 1.75rem;
+}
+
+/* Lists */
+article.project-doc .notion-list {
+
+  padding-left: 1.25rem;
+  font-size: var(--tc-m);
+  font-weight: 400;
+  color: var(--tc-grey);
+  line-height: 1.55;
+}
+
+article.project-doc .notion-list--bullet {
+  list-style: disc;
+}
+
+article.project-doc .notion-list--numbered {
+  list-style: decimal;
+}
+
+article.project-doc .notion-rich-text {
+  display: inline;
+  font: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+
+article.project-doc ul.notion-list > li.notion-li,
+article.project-doc ol.notion-list > li.notion-li {
+  display: list-item;
+  list-style-position: outside;
+  flex-direction: unset;
+  align-items: unset;
+  gap: unset;
+  border-bottom: none;
+  padding: 0.2rem 0;
+}
+
+article.project-doc .notion-li .notion-blocks {
+  gap: 0;
+  margin-top: 0.35rem;
+}
+
+/* Quote: prose like .md > p */
+article.project-doc .notion-quote {
+  margin: 0 0 1.75rem;
+  padding-left: 1rem;
+  border-left: 3px solid rgba(0, 0, 0, 0.08);
+}
+
+article.project-doc .notion-quote p {
+  margin: 0;
+  font-size: var(--tc-m);
+  font-weight: 400;
+  color: var(--tc-grey);
+  line-height: 1.55;
+}
+
+article.project-doc .notion-divider {
+  width: 100%;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin: 0 0 1.75rem;
+}
+
+/* Figures: same as .artwork-page .artwork-figure */
+article.project-doc .notion-figure {
+  margin: 0 0 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+article.project-doc .notion-figure img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border: 0px solid rgba(0, 0, 0, 0.08);
+}
+
+article.project-doc .notion-figure figcaption {
+  margin: 0;
+  font-size: var(--tc-s);
+  color: var(--tc-grey);
+  line-height: 1.45;
+}
+
+article.project-doc .notion-callout {
+  display: flex;
+  gap: 0.75rem;
+  margin: 0 0 1.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: transparent;
+}
+
+article.project-doc .notion-callout__icon {
+  flex-shrink: 0;
+  line-height: 1.4;
+}
+
+article.project-doc .notion-callout__body {
+  flex: 1;
+  min-width: 0;
+  font-size: var(--tc-m);
+  font-weight: 400;
+  color: var(--tc-grey);
+  line-height: 1.55;
+}
+
+article.project-doc .notion-callout__children {
+  margin-top: 0.5rem;
+}
+
+article.project-doc .notion-code {
+  margin: 0 0 1.75rem;
+  padding: 0.75rem 1rem;
+  overflow-x: auto;
+  font-size: var(--tc-s);
+  line-height: 1.45;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: transparent;
+}
+
+article.project-doc .notion-toggle {
+  margin: 0 0 1.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0.5rem 0.75rem;
+}
+
+article.project-doc .notion-toggle__summary {
+  cursor: pointer;
+  font-size: var(--tc-m);
+  font-weight: 600;
+  color: var(--tc-black);
+}
+
+article.project-doc .notion-toggle__body {
+  margin-top: 0.75rem;
+  padding-left: 0.5rem;
+}
+
+article.project-doc .notion-underline {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+article.project-doc .notion-image-fallback,
+article.project-doc .notion-unsupported {
+  margin: 0 0 1.75rem;
+  font-size: var(--tc-s);
+  color: var(--tc-grey);
+}
+
+/* Links: match .md a (TwoColumnLayout.css) — reinforce inside notion for specificity */
+article.project-doc .notion-blocks.md a {
+  color: var(--tc-grey);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+article.project-doc .notion-blocks.md a:hover {
+  color: var(--tc-black);
+}
+
+article.project-doc .notion-blocks.md strong {
+  color: var(--tc-black);
+  font-weight: 500;
+}

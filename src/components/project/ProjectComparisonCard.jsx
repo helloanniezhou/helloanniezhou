@@ -3,22 +3,20 @@ import "./ProjectDetailShared.css";
 
 function ProjectComparisonCard({ title, description, isStructured = false }) {
   return (
-    <article className="project-compare-card">
-      <h3 className="project-compare-title">{title}</h3>
-      <div className="project-compare-visual">
+    <li>
+      <h3>{title}</h3>
+      <figure data-viz={isStructured ? "bars" : "circle"} aria-hidden="true">
         {isStructured ? (
-          <div className="project-compare-bars">
-            <span />
-            <span />
-            <span />
-            <span />
-          </div>
-        ) : (
-          <div className="project-compare-circle" />
-        )}
-      </div>
-      <p className="project-compare-description">{description}</p>
-    </article>
+          <>
+            <i />
+            <i />
+            <i />
+            <i />
+          </>
+        ) : null}
+      </figure>
+      <p>{description}</p>
+    </li>
   );
 }
 

@@ -1,11 +1,11 @@
 import React from "react";
 import "./ProjectDetailShared.css";
 
-function ProjectImpactStat({ label, body }) {
+function ProjectImpactStat({ label, children }) {
   return (
-    <article className="project-impact-stat">
+    <article>
       <h3>{label}</h3>
-      <p dangerouslySetInnerHTML={{ __html: body }} />
+      <p>{children}</p>
     </article>
   );
 }

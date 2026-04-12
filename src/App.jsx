@@ -1,22 +1,28 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import TwoColumnLayout from "./components/TwoColumnLayout";
-import WorkPage from "./pages/WorkPage";
 import AboutPage from "./pages/AboutPage";
 import ArtworkPage from "./pages/ArtworkPage";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
 
-function App() {
-  const location = useLocation();
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [pathname]);
+  return null;
+}
 
+function App() {
   return (
     <div className="page page--twocol">
-      <div key={location.pathname} className="route-frame route-frame-animate">
-        <Routes location={location}>
+      <ScrollToTop />
+      <div className="route-frame">
+        <Routes>
           <Route element={<TwoColumnLayout />}>
-            <Route path="/" element={<WorkPage />} />
+            <Route path="/" element={<AboutPage />} />
+            <Route path="/about" element={<Navigate to="/" replace />} />
             <Route path="/projects/:slug" element={<ProjectDetailPage />} />
-            <Route path="/about" element={<AboutPage />} />
             <Route path="/artwork" element={<ArtworkPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>

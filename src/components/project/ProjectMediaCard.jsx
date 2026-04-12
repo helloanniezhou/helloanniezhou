@@ -3,10 +3,12 @@ import "./ProjectDetailShared.css";
 
 function ProjectMediaCard({ imageSrc, imageAlt, caption, phone = false }) {
   return (
-    <article className={`project-media-card ${phone ? "is-phone" : ""}`}>
-      <img src={imageSrc} alt={imageAlt} className="project-media-image" />
-      <p className="project-media-caption">{caption}</p>
-    </article>
+    <li>
+      <figure data-phone={phone ? "" : undefined}>
+        <img src={imageSrc} alt={imageAlt} />
+        <figcaption>{caption}</figcaption>
+      </figure>
+    </li>
   );
 }
 
