@@ -1,6 +1,6 @@
 {
   "sourcePageId": "340bef17e03580d6a55adfa2e2c82c7c",
-  "fetchedAt": "2026-04-13T18:55:32.685Z",
+  "fetchedAt": "2026-04-13T22:26:24.260Z",
   "blocks": [
     {
       "id": "341bef17-e035-80e9-8f7e-c9df08d44ecd",
@@ -30,7 +30,7 @@
         },
         {
           "type": "text",
-          "text": "Google Labs",
+          "text": "Google Labs ↗",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -81,7 +81,7 @@
         },
         {
           "type": "text",
-          "text": "Read more",
+          "text": "Read more ↗",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -121,7 +121,7 @@
         },
         {
           "type": "text",
-          "text": "Read more",
+          "text": "Read more ↗",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -161,7 +161,7 @@
         },
         {
           "type": "text",
-          "text": "Read more",
+          "text": "Read more ↗",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -201,7 +201,7 @@
         },
         {
           "type": "text",
-          "text": "Read more",
+          "text": "Read more ↗",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -241,7 +241,7 @@
         },
         {
           "type": "text",
-          "text": "Read more",
+          "text": "Read more ↗",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -254,7 +254,7 @@
       "children": []
     },
     {
-      "id": "341bef17-e035-8005-8174-f067975d80b7",
+      "id": "341bef17-e035-80d1-af95-ea9e19a2be97",
       "type": "paragraph",
       "richText": []
     },
@@ -275,6 +275,18 @@
       "type": "unsupported",
       "unsupported": true,
       "rawType": "child_page"
+    },
+    {
+      "id": "341bef17-e035-80b5-807e-cbf35ca28174",
+      "type": "paragraph",
+      "richText": []
+    },
+    {
+      "id": "341bef17-e035-8043-9c9c-ceb1966146b1",
+      "type": "unsupported",
+      "unsupported": true,
+      "rawType": "child_page"
     }
-  ]
+  ],
+  "title": "Projects"
 }

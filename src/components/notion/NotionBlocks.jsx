@@ -154,6 +154,26 @@ function NotionBlock({ block }) {
     );
   }
 
+  if (t === "column_list") {
+    return (
+      <div className="notion-block notion-column-list">
+        {block.children?.length ? <NotionBlocks blocks={block.children} /> : null}
+      </div>
+    );
+  }
+
+  if (t === "column") {
+    const flexStyle =
+      typeof block.widthRatio === "number" && Number.isFinite(block.widthRatio)
+        ? { flex: `${block.widthRatio} 1 0%`, minWidth: 0 }
+        : { flex: "1 1 0%", minWidth: 0 };
+    return (
+      <div className="notion-block notion-column" style={flexStyle}>
+        {block.children?.length ? <NotionBlocks blocks={block.children} /> : null}
+      </div>
+    );
+  }
+
   if (block.unsupported) {
     return null;
   }

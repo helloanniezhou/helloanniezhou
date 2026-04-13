@@ -1,6 +1,6 @@
 {
   "sourcePageId": "213bef17e03580d0bce1d98d4f0ebfd4",
-  "fetchedAt": "2026-04-13T18:55:34.239Z",
+  "fetchedAt": "2026-04-13T22:26:30.787Z",
   "blocks": [
     {
       "id": "340bef17-e035-8002-bed8-d3bc88b8fbf8",
@@ -344,20 +344,9 @@
     },
     {
       "id": "340bef17-e035-8083-973c-deecf8fad962",
-      "type": "paragraph",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Start with one segment and expand later",
-          "bold": true,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ]
+      "type": "unsupported",
+      "unsupported": true,
+      "rawType": "heading_4"
     },
     {
       "id": "340bef17-e035-80f8-9fa4-c86ccf1091e1",
@@ -377,38 +366,10 @@
       ]
     },
     {
-      "id": "340bef17-e035-8027-8d88-cb48a487beff",
-      "type": "paragraph",
-      "richText": [
-        {
-          "type": "text",
-          "text": "I co-created the product and design strategy for the fitness area on watch.",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ]
-    },
-    {
       "id": "340bef17-e035-80c1-a7a4-eb50e4f41287",
-      "type": "paragraph",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Introduced structured workout tracking",
-          "bold": true,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ]
+      "type": "unsupported",
+      "unsupported": true,
+      "rawType": "heading_4"
     },
     {
       "id": "340bef17-e035-80eb-8b8a-fa85fc6af226",
@@ -515,111 +476,20 @@
       "children": []
     },
     {
-      "id": "341bef17-e035-80d0-80ac-efb6ec4750de",
-      "type": "heading_3",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Design execution",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ]
-    },
-    {
-      "id": "340bef17-e035-80fb-bc26-ce04ba6c4445",
-      "type": "bulleted_list_item",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Build your custom run. ",
-          "bold": true,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": "Create warmups, cool downs, intervals and pace and HR targets. Then access saved workouts and track your PRs.",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ],
-      "children": []
-    },
-    {
-      "id": "341bef17-e035-8094-807c-d0561565890e",
+      "id": "340bef17-e035-8043-a062-ca8ec62b52d3",
       "type": "image",
-      "unsupported": "hosted_file",
-      "caption": []
+      "url": "/notion-images/fitness-for-fitbit/340bef17e0358043a062ca8ec62b52d3.webp",
+      "caption": [],
+      "maxWidth": "100%"
     },
     {
-      "id": "340bef17-e035-807c-bd79-f66388d2de7c",
-      "type": "bulleted_list_item",
-      "richText": [
-        {
-          "type": "text",
-          "text": "In-workout coaching to keep you on track. ",
-          "bold": true,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": "Start one of your custom runs and get audio and haptic cues for when to sprint, cool down or maintain pace.",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ],
-      "children": []
+      "id": "341bef17-e035-807c-a97d-d7996764f718",
+      "type": "unsupported",
+      "unsupported": true,
+      "rawType": "heading_4"
     },
     {
-      "id": "341bef17-e035-804b-aed2-f4d2e51a48d3",
-      "type": "image",
-      "unsupported": "hosted_file",
-      "caption": []
-    },
-    {
-      "id": "340bef17-e035-80bb-a085-db47422911c7",
-      "type": "heading_3",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Leading with realistic insights",
-          "bold": true,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ]
-    },
-    {
-      "id": "340bef17-e035-80f4-a865-d100c2d3a2d9",
+      "id": "341bef17-e035-80be-aeca-d63d2ec8a455",
       "type": "paragraph",
       "richText": [
         {
@@ -680,23 +550,19 @@
       ]
     },
     {
-      "id": "340bef17-e035-8015-bc59-e9d8602eb3a7",
-      "type": "paragraph",
+      "id": "341bef17-e035-801d-8ca6-f66936b9a02a",
+      "type": "image",
+      "url": "/notion-images/fitness-for-fitbit/341bef17e035801d8ca6f66936b9a02a.webp",
+      "caption": [],
+      "maxWidth": "100%"
+    },
+    {
+      "id": "341bef17-e035-80d0-80ac-efb6ec4750de",
+      "type": "heading_3",
       "richText": [
         {
           "type": "text",
-          "text": "Know what your body is ready for each day: ",
-          "bold": true,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": "We worked with a clinical expert and introduced a new metric that can inform how hard you work your heart. ",
+          "text": "Design execution",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -708,50 +574,234 @@
       ]
     },
     {
-      "id": "340bef17-e035-80b4-9d55-ed541d9d441e",
-      "type": "image",
-      "url": "/notion-images/fitness-for-fitbit/340bef17e03580b49d55ed541d9d441e.webp",
-      "caption": [],
-      "maxWidth": "100%"
-    },
-    {
-      "id": "340bef17-e035-80e0-9cb9-c98db052b5e6",
-      "type": "paragraph",
-      "richText": [
+      "id": "341bef17-e035-80a6-9565-e41c528071a9",
+      "type": "column_list",
+      "children": [
         {
-          "type": "text",
-          "text": "Analyze your run: ",
-          "bold": true,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
+          "id": "341bef17-e035-809e-b8f0-e41dc9950d3d",
+          "type": "column",
+          "children": [
+            {
+              "id": "341bef17-e035-8054-b29c-f1a330bc77dd",
+              "type": "paragraph",
+              "richText": [
+                {
+                  "type": "text",
+                  "text": "Build your custom run. ",
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default",
+                  "href": null
+                },
+                {
+                  "type": "text",
+                  "text": "Create warmups, cool downs, intervals and pace and HR targets. Then access saved workouts and track your PRs.",
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default",
+                  "href": null
+                }
+              ]
+            },
+            {
+              "id": "341bef17-e035-80ec-8e1e-c13555048d7b",
+              "type": "paragraph",
+              "richText": []
+            }
+          ],
+          "widthRatio": 0.5
         },
         {
-          "type": "text",
-          "text": "Advanced motion sensing measures cadence, stride length, vertical oscillation and more to improve running performance.",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
+          "id": "341bef17-e035-80cc-a0e0-f6055fe3866e",
+          "type": "column",
+          "children": [
+            {
+              "id": "341bef17-e035-8094-807c-d0561565890e",
+              "type": "image",
+              "url": "/notion-images/fitness-for-fitbit/341bef17e0358094807cd0561565890e.png",
+              "caption": [],
+              "maxWidth": "80%"
+            }
+          ],
+          "widthRatio": 0.5
         }
       ]
     },
     {
-      "id": "340bef17-e035-8043-a062-ca8ec62b52d3",
-      "type": "image",
-      "url": "/notion-images/fitness-for-fitbit/340bef17e0358043a062ca8ec62b52d3.webp",
-      "caption": [],
-      "maxWidth": "100%"
+      "id": "341bef17-e035-80e1-96df-ec344f2338b7",
+      "type": "column_list",
+      "children": [
+        {
+          "id": "341bef17-e035-80a8-8f64-c759548cd586",
+          "type": "column",
+          "children": [
+            {
+              "id": "341bef17-e035-8070-bf65-e5b8b57e4cdc",
+              "type": "paragraph",
+              "richText": [
+                {
+                  "type": "text",
+                  "text": "In-workout coaching to keep you on track. ",
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default",
+                  "href": null
+                },
+                {
+                  "type": "text",
+                  "text": "Start one of your custom runs and get audio and haptic cues for when to sprint, cool down or maintain pace.",
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default",
+                  "href": null
+                }
+              ]
+            }
+          ],
+          "widthRatio": 0.5
+        },
+        {
+          "id": "341bef17-e035-807b-aa5c-e2b70b25d099",
+          "type": "column",
+          "children": [
+            {
+              "id": "341bef17-e035-804b-aed2-f4d2e51a48d3",
+              "type": "image",
+              "url": "/notion-images/fitness-for-fitbit/341bef17e035804baed2f4d2e51a48d3.gif",
+              "caption": [],
+              "maxWidth": "100%"
+            }
+          ],
+          "widthRatio": 0.5
+        }
+      ]
     },
     {
-      "id": "340bef17-e035-80ad-8ad1-f50bdf38c674",
-      "type": "divider"
+      "id": "341bef17-e035-809c-a392-c1bbbdaf1043",
+      "type": "column_list",
+      "children": [
+        {
+          "id": "341bef17-e035-80b0-9980-e16eaaa359e8",
+          "type": "column",
+          "children": [
+            {
+              "id": "341bef17-e035-80d6-a358-e9b2cfb6f2f3",
+              "type": "paragraph",
+              "richText": [
+                {
+                  "type": "text",
+                  "text": "Know what your body is ready for each day: ",
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default",
+                  "href": null
+                },
+                {
+                  "type": "text",
+                  "text": "We worked with a clinical expert and introduced a new metric that can inform how hard you work your heart. ",
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default",
+                  "href": null
+                }
+              ]
+            }
+          ],
+          "widthRatio": 0.5
+        },
+        {
+          "id": "341bef17-e035-80ec-b94b-d8ac3b502dfd",
+          "type": "column",
+          "children": [
+            {
+              "id": "340bef17-e035-80b4-9d55-ed541d9d441e",
+              "type": "image",
+              "url": "/notion-images/fitness-for-fitbit/340bef17e03580b49d55ed541d9d441e.webp",
+              "caption": [],
+              "maxWidth": "100%"
+            }
+          ],
+          "widthRatio": 0.5
+        }
+      ]
+    },
+    {
+      "id": "341bef17-e035-80be-99dd-d9a5e41477a2",
+      "type": "column_list",
+      "children": [
+        {
+          "id": "341bef17-e035-800c-a59e-cac4b2b260e5",
+          "type": "column",
+          "children": [
+            {
+              "id": "341bef17-e035-80bc-b04f-d272384cc256",
+              "type": "paragraph",
+              "richText": [
+                {
+                  "type": "text",
+                  "text": "Analyze your run: ",
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default",
+                  "href": null
+                },
+                {
+                  "type": "text",
+                  "text": "Advanced motion sensing measures cadence, stride length, vertical oscillation and more to improve running performance.",
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default",
+                  "href": null
+                }
+              ]
+            },
+            {
+              "id": "341bef17-e035-8047-accd-ccb36c694675",
+              "type": "paragraph",
+              "richText": []
+            }
+          ],
+          "widthRatio": 0.5
+        },
+        {
+          "id": "341bef17-e035-802d-b02f-c28e9c35007b",
+          "type": "column",
+          "children": [
+            {
+              "id": "341bef17-e035-8050-8f66-c440a93874dd",
+              "type": "image",
+              "url": "/notion-images/fitness-for-fitbit/341bef17e03580508f66c440a93874dd.png",
+              "caption": [],
+              "maxWidth": "80%"
+            }
+          ],
+          "widthRatio": 0.5
+        }
+      ]
     },
     {
       "id": "340bef17-e035-8060-a347-c9525d8330fb",
@@ -810,5 +860,6 @@
       ],
       "children": []
     }
-  ]
+  ],
+  "title": "Fitness for Fitbit"
 }

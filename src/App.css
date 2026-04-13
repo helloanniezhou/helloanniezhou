@@ -1,13 +1,16 @@
 :root {
+  /* Pen art is 29 x 28; hotspot ~ nib — tweak x y if the tip feels off */
+  --cursor-pen: url("/cursors/pen.svg") 0 20, auto;
+
   --surface-card: hsl(0 0% 100%);
   --tc-black: hsl(240 10% 12%);
   --tc-grey: hsl(240 8% 38%);
-  --accent: hsl(240 100% 50%);
+  --accent: rgb(0, 0, 255);
   --radius-sm: 12px;
   --space-3: 1.5rem;
 
   /* Type scale */
-  --tc-s: 0.8rem;
+  --tc-s: 0.875rem;
   --tc-m: 1.25 rem;
   --tc-l: 1.5rem;
   --tc-xl: 1.75rem;
@@ -17,6 +20,22 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+/* Styles for all selected text */
+::selection {
+  background-color: rgb(0, 0, 255,0.25); 
+
+}
+
+/* Specific to Firefox (optional but recommended) */
+::-moz-selection {
+  background-color: rgb(0, 0, 255,0.25); 
+}
+
+
+html {
+  cursor: var(--cursor-pen);
 }
 
 html,
@@ -29,6 +48,40 @@ body,
 body {
   font-family: "Instrument Sans", sans-serif;
   color: var(--tc-black);
+}
+
+input:not([type="button"]):not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="range"]):not([type="color"]),
+textarea,
+[contenteditable="true"] {
+  cursor: text;
+}
+
+/* Deter casual copy/drag-save; does not block determined downloads */
+img {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Links/buttons: keep pen instead of the default hand */
+:where(
+  a,
+  button,
+  label[for],
+  summary,
+  [role="button"],
+  select,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  input[type="checkbox"],
+  input[type="radio"],
+  input[type="file"],
+  input[type="range"],
+  input[type="color"]
+) {
+  cursor: var(--cursor-pen);
 }
 
 .page {
@@ -52,9 +105,9 @@ body {
   margin: 0;
   font-size: var(--tc-l);
   font-weight: 300;
-  color: var(--tc-grey);
+  color: var(--tc-black);
   line-height: 1.55;
-  padding: 1rem 0 3rem 0;
+  padding-bottom: 3rem;
 }
 
 @media (max-width: 1200px) {

@@ -1,5 +1,5 @@
 /**
- * Build-time JSON from scripts/notion/fetchNotionBlocks.mjs (one file per slug).
+ * Build-time JSON from notion/fetchNotionBlocks.mjs (one file per slug).
  * Vite inlines matching .json files; keys vary by version (e.g. ./slug.json vs full path).
  */
 const rawModules = import.meta.glob("./*.json", { eager: true });

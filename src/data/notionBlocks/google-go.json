@@ -1,6 +1,6 @@
 {
   "sourcePageId": "340bef17e03580a59b27cdd340bf93e1",
-  "fetchedAt": "2026-04-13T18:55:33.811Z",
+  "fetchedAt": "2026-04-13T22:26:27.346Z",
   "blocks": [
     {
       "id": "340bef17-e035-8070-acee-f2ad71eca57d",
@@ -203,7 +203,7 @@
       "richText": [
         {
           "type": "text",
-          "text": "Solutions",
+          "text": "Design solutions",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -215,20 +215,58 @@
       ]
     },
     {
-      "id": "340bef17-e035-80df-a017-f176dbbb7205",
-      "type": "numbered_list_item",
-      "richText": [
+      "id": "341bef17-e035-8087-bdb9-d0beb0760db8",
+      "type": "column_list",
+      "children": [
         {
-          "type": "text",
-          "text": "Karaoke mode reads out the page aloud to help people read",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
+          "id": "341bef17-e035-80e0-8ba4-e6d70ccb2590",
+          "type": "column",
+          "children": [
+            {
+              "id": "341bef17-e035-807d-ba02-eb689b281e23",
+              "type": "paragraph",
+              "richText": []
+            },
+            {
+              "id": "341bef17-e035-804f-a400-ee2ad99b6c31",
+              "type": "paragraph",
+              "richText": [
+                {
+                  "type": "text",
+                  "text": "Karaoke mode reads out the page aloud to help people read",
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default",
+                  "href": null
+                }
+              ]
+            }
+          ],
+          "widthRatio": 0.5
         },
+        {
+          "id": "341bef17-e035-80bd-b940-c3d2e2f17a02",
+          "type": "column",
+          "children": [
+            {
+              "id": "340bef17-e035-803d-9c95-e32ac94d30e0",
+              "type": "image",
+              "url": "/notion-images/google-go/340bef17e035803d9c95e32ac94d30e0.gif",
+              "caption": [],
+              "maxWidth": 275
+            }
+          ],
+          "widthRatio": 0.5
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-80df-a017-f176dbbb7205",
+      "type": "paragraph",
+      "richText": [
         {
           "type": "text",
           "text": "\n",
@@ -240,65 +278,110 @@
           "color": "default",
           "href": null
         }
-      ],
-      "children": []
+      ]
     },
     {
-      "id": "340bef17-e035-803d-9c95-e32ac94d30e0",
-      "type": "image",
-      "url": "/notion-images/google-go/340bef17e035803d9c95e32ac94d30e0.gif",
-      "caption": [],
-      "maxWidth": 300
-    },
-    {
-      "id": "340bef17-e035-801d-8fab-f2165626e8df",
-      "type": "numbered_list_item",
-      "richText": [
+      "id": "341bef17-e035-801e-ac4b-f9ef3ba9d16d",
+      "type": "column_list",
+      "children": [
         {
-          "type": "text",
-          "text": "A language onboarding I designed to help Indian users set the app at first go\n",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ],
-      "children": []
-    },
-    {
-      "id": "341bef17-e035-8058-8774-d52f5ff52f03",
-      "type": "image",
-      "url": "/notion-images/google-go/341bef17e03580588774d52f5ff52f03.png",
-      "caption": [],
-      "maxWidth": 300
-    },
-    {
-      "id": "340bef17-e035-80fd-9fb4-e2a8b1f0d41e",
-      "type": "numbered_list_item",
-      "richText": [
+          "id": "341bef17-e035-80e5-8aea-fa1603848dac",
+          "type": "column",
+          "children": [
+            {
+              "id": "341bef17-e035-8027-892a-d4f7bf39be73",
+              "type": "paragraph",
+              "richText": []
+            },
+            {
+              "id": "341bef17-e035-80ef-97ca-df8e6f7d0e9a",
+              "type": "paragraph",
+              "richText": [
+                {
+                  "type": "text",
+                  "text": "A language onboarding I designed to help Indian users set the app at first go\n",
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default",
+                  "href": null
+                }
+              ]
+            }
+          ],
+          "widthRatio": 0.5
+        },
         {
-          "type": "text",
-          "text": "Mini learnings are short videos to help users learn what to do in the app.",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
+          "id": "341bef17-e035-8052-aaa2-dc63dc62a304",
+          "type": "column",
+          "children": [
+            {
+              "id": "341bef17-e035-8058-8774-d52f5ff52f03",
+              "type": "image",
+              "url": "/notion-images/google-go/341bef17e03580588774d52f5ff52f03.png",
+              "caption": [],
+              "maxWidth": 300
+            }
+          ],
+          "widthRatio": 0.5
         }
-      ],
-      "children": []
+      ]
     },
     {
-      "id": "340bef17-e035-80b7-81b7-ef5932678f5d",
-      "type": "image",
-      "url": "/notion-images/google-go/340bef17e03580b781b7ef5932678f5d.gif",
-      "caption": [],
-      "maxWidth": 300
+      "id": "341bef17-e035-80b5-a721-e37d1e0b111d",
+      "type": "column_list",
+      "children": [
+        {
+          "id": "341bef17-e035-80bb-8a87-eadb109e131c",
+          "type": "column",
+          "children": [
+            {
+              "id": "341bef17-e035-8043-81d2-f8745c401373",
+              "type": "paragraph",
+              "richText": []
+            },
+            {
+              "id": "341bef17-e035-809a-b1bf-fa1aa6053f65",
+              "type": "paragraph",
+              "richText": []
+            },
+            {
+              "id": "341bef17-e035-8004-ae17-f2ab4cfca476",
+              "type": "paragraph",
+              "richText": [
+                {
+                  "type": "text",
+                  "text": "Mini learnings are short videos to help users learn what to do in the app.",
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default",
+                  "href": null
+                }
+              ]
+            }
+          ],
+          "widthRatio": 0.5
+        },
+        {
+          "id": "341bef17-e035-80df-b161-c40e3a7f7257",
+          "type": "column",
+          "children": [
+            {
+              "id": "340bef17-e035-80b7-81b7-ef5932678f5d",
+              "type": "image",
+              "url": "/notion-images/google-go/340bef17e03580b781b7ef5932678f5d.gif",
+              "caption": [],
+              "maxWidth": 275
+            }
+          ],
+          "widthRatio": 0.5
+        }
+      ]
     },
     {
       "id": "340bef17-e035-80ea-aaa9-ef22351654c3",
@@ -513,5 +596,6 @@
       "type": "paragraph",
       "richText": []
     }
-  ]
+  ],
+  "title": "Google Go"
 }

@@ -30,7 +30,15 @@ function AboutPage() {
 
   return (
     <article className="md">
-      <h1>About Annie</h1>
+      <h1 className="about-title">
+        About Annie
+        <img
+          className="about-title__look"
+          src="/cursors/look.svg"
+          alt=""
+          decoding="async"
+        />
+      </h1>
       <p className="intro-text">
         I&apos;m a UX designer, with 10+ years at Google and an MBA from Harvard. I love to build prototypes and think about the business of the product. Find me on{" "}
         <a href="https://www.linkedin.com/in/annieyezhou/" target="_blank" rel="noreferrer">

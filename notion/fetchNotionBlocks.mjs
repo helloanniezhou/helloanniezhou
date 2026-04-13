@@ -1,34 +1,29 @@
 /**
- * Fetches each Notion page body and writes portable JSON blocks to src/data/notionBlocks/<slug>.json
- *
- * Setup:
- * 1. Create an internal integration at https://www.notion.so/my-integrations
- * 2. Share each project page with the integration
- * 3. Put the secret in env: create a root `.env` with NOTION_TOKEN=... (gitignored), or run
- *    `export NOTION_TOKEN=secret_...` in your shell.
- * 4. Edit src/data/notionProjectPages.json: { "your-slug": "notion-page-uuid" } (includes about-projects for About)
- * 5. npm run notion:sync
- *
- * Images:
- * - External / "Link" URLs are copied into JSON as-is (best for CDNs you control).
- * - Uploaded Notion files are downloaded during sync into public/notion-images/<slug>/ (stable for static hosting).
- *   Commit those files with the repo, or re-run sync in CI before build (requires network).
- *
- * Image size (optional):
- * - Start the caption with `dim:<value>` (stripped on site). Bare number = max-width in px; add a unit for %, rem, etc. (e.g. dim:100%, dim:24rem).
- * - Or edit JSON: "maxWidth", "width", "height" (numbers = px, or strings like "50%"). Re-sync merges by block id when the block still exists.
+ * Notion → static JSON + images. See notion/notion-skill.md for setup and usage.
  */
 
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
-import { extractDimFromCaptionRuns } from "../../src/lib/notionExtractDim.js";
+import { extractDimFromCaptionRuns } from "../src/lib/notionExtractDim.js";
 
 const NOTION_VERSION = "2022-06-28";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const ROOT = path.join(__dirname, "..", "..");
+const ROOT = path.join(__dirname, "..");
 const MAP_PATH = path.join(ROOT, "src", "data", "notionProjectPages.json");
 const OUT_DIR = path.join(ROOT, "src", "data", "notionBlocks");
+
+/** Sync only this slug (must exist in notionProjectPages.json). Omit for full sync. */
+function parseSlugFilter() {
+  const args = process.argv.slice(2);
+  for (let i = 0; i < args.length; i++) {
+    const a = args[i];
+    if (a.startsWith("--slug=") && a.length > 7) return a.slice(7);
+    if (a === "--slug" && args[i + 1] && !args[i + 1].startsWith("-")) return args[i + 1];
+  }
+  const positional = args.find((a) => !a.startsWith("-"));
+  return positional || null;
+}
 
 /** Load root `.env` into process.env if present (does not override existing env vars). */
 function loadEnvFile() {
@@ -60,6 +55,19 @@ function notionHeaders(token) {
     "Notion-Version": NOTION_VERSION,
     "Content-Type": "application/json"
   };
+}
+
+function extractPageTitle(page) {
+  const props = page?.properties;
+  if (!props) return null;
+  for (const key of Object.keys(props)) {
+    const p = props[key];
+    if (p?.type === "title" && Array.isArray(p.title)) {
+      const text = p.title.map((t) => t.plain_text).join("");
+      if (text.trim()) return text.trim();
+    }
+  }
+  return null;
 }
 
 async function notionFetch(token, pathname) {
@@ -244,6 +252,17 @@ async function transformBlock(block, slug) {
       children
     };
   }
+  if (t === "column_list") {
+    const children = await Promise.all((block.children || []).map((c) => transformBlock(c, slug)));
+    return { id, type: t, children };
+  }
+  if (t === "column") {
+    const children = await Promise.all((block.children || []).map((c) => transformBlock(c, slug)));
+    const wr = block.column?.width_ratio;
+    const out = { id, type: t, children };
+    if (typeof wr === "number" && Number.isFinite(wr)) out.widthRatio = wr;
+    return out;
+  }
 
   return { id, type: "unsupported", unsupported: true, rawType: t };
 }
@@ -257,7 +276,7 @@ async function main() {
   const token = process.env.NOTION_TOKEN;
   if (!token) {
     console.error(
-      "Missing NOTION_TOKEN. Add it to a root `.env` file (see .env.example) or export it in your shell."
+      "Missing NOTION_TOKEN. Add it to a root `.env` file (see notion/notion-skill.md) or export it in your shell."
     );
     process.exit(1);
   }
@@ -266,10 +285,28 @@ async function main() {
     process.exit(1);
   }
   const map = JSON.parse(fs.readFileSync(MAP_PATH, "utf8"));
-  const slugs = Object.keys(map);
-  if (slugs.length === 0) {
-    console.log("notionProjectPages.json is empty — add { \"slug\": \"page-uuid\" } entries.");
+  const allSlugs = Object.keys(map);
+  if (allSlugs.length === 0) {
+    console.log('notionProjectPages.json is empty — add { "slug": "page-uuid" } entries.');
     process.exit(0);
+  }
+
+  const slugFilter = parseSlugFilter();
+  const slugs = slugFilter
+    ? allSlugs.filter((s) => s === slugFilter)
+    : allSlugs;
+
+  if (slugFilter && slugs.length === 0) {
+    console.error(
+      `Unknown slug "${slugFilter}". It must be a key in notionProjectPages.json. Known: ${allSlugs.join(", ")}`
+    );
+    process.exit(1);
+  }
+
+  if (slugFilter) {
+    console.log(`Syncing single page: ${slugFilter}`);
+  } else {
+    console.log(`Syncing all pages (${slugs.length} slugs)`);
   }
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
@@ -280,6 +317,9 @@ async function main() {
       console.warn(`Skip ${slug}: invalid page id`);
       continue;
     }
+    const page = await notionFetch(token, `/pages/${pageId}`);
+    let title = extractPageTitle(page);
+
     const rawBlocks = await listChildren(token, pageId);
     const blocks = await transformBlocks(rawBlocks, slug);
     const outPath = path.join(OUT_DIR, `${slug}.json`);
@@ -287,6 +327,9 @@ async function main() {
       try {
         const prevDoc = JSON.parse(fs.readFileSync(outPath, "utf8"));
         mergeImageDimensionsFromPrevious(blocks, prevDoc.blocks || []);
+        if (!title && typeof prevDoc.title === "string" && prevDoc.title.trim()) {
+          title = prevDoc.title.trim();
+        }
       } catch {
         /* ignore corrupt previous */
       }
@@ -296,6 +339,7 @@ async function main() {
       fetchedAt: new Date().toISOString(),
       blocks
     };
+    if (title) doc.title = title;
     fs.writeFileSync(outPath, `${JSON.stringify(doc, null, 2)}\n`, "utf8");
     console.log(`Wrote ${path.relative(ROOT, outPath)} (${blocks.length} top-level blocks)`);
   }

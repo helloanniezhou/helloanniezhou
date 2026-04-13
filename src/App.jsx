@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import TwoColumnLayout from "./components/TwoColumnLayout";
 import AboutPage from "./pages/AboutPage";
@@ -13,10 +13,24 @@ function ScrollToTop() {
   return null;
 }
 
+function BlockImageContextMenu() {
+  useEffect(() => {
+    const onContextMenu = (e) => {
+      if (e.target instanceof HTMLImageElement) {
+        e.preventDefault();
+      }
+    };
+    document.addEventListener("contextmenu", onContextMenu);
+    return () => document.removeEventListener("contextmenu", onContextMenu);
+  }, []);
+  return null;
+}
+
 function App() {
   return (
     <div className="page page--twocol">
       <ScrollToTop />
+      <BlockImageContextMenu />
       <div className="route-frame">
         <Routes>
           <Route element={<TwoColumnLayout />}>
@@ -30,7 +44,7 @@ function App() {
       </div>
 
       <footer className="tc-foot">
-        <p>&copy; 2026 Annie Zhou.</p>
+        <p>&copy; 2026 Annie Zhou. Vibe coded with Cursor, powered by Notion API.</p>
       </footer>
     </div>
   );

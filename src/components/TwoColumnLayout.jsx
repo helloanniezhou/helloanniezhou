@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
+import { listCaseStudiesForNav } from "../lib/notionProjects";
 import "./TwoColumnLayout.css";
 
 function linkClass({ isActive }) {
@@ -29,6 +30,8 @@ function ProjectsSideLink() {
 }
 
 export default function TwoColumnLayout() {
+  const caseStudies = listCaseStudiesForNav();
+
   return (
     <div className="tc">
       <nav className="tc-side" aria-label="Site">
@@ -40,21 +43,13 @@ export default function TwoColumnLayout() {
         <div className="tc-stack">
           <ProjectsSideLink />
           <ul className="tc-stack tc-stack--tight">
-            <li>
-              <NavLink to="/projects/fitness-for-fitbit" className={linkClass}>
-                Fitbit
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/projects/google-go" className={linkClass}>
-                Google Go
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/projects/airwallex" className={linkClass}>
-                Airwallex
-              </NavLink>
-            </li>
+            {caseStudies.map(({ slug, title }) => (
+              <li key={slug}>
+                <NavLink to={`/projects/${slug}`} className={linkClass}>
+                  {title}
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="tc-stack">
