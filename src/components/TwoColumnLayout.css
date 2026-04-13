@@ -39,14 +39,7 @@
 
 .tc-stack--tight {
   padding-left: 0.5rem;
-  gap: 0.3rem;
-}
-
-.tc-h {
-  margin: 0;
-  font-size: var(--tc-s);
-  font-weight: 600;
-  color: var(--tc-black);
+  gap: 0.75rem;
 }
 
 .tc-a {
@@ -56,9 +49,10 @@
   text-decoration: none;
 }
 
-.tc-a disabled {
+.tc-a.disabled {
   color: var(--tc-grey);
   text-decoration: none;
+  pointer-events: none;
 }
 
 .tc-a:hover {
@@ -87,18 +81,10 @@
   line-height: 1.2;
 }
 
-.md > p {
-  margin: 0 0 1.75rem;
-  font-size: var(--tc-m);
-  font-weight: 400;
-  color: var(--tc-grey);
-  line-height: 1.55;
-}
-
 .md h2 {
   margin: 0 0 0.75rem;
   font-size: var(--tc-s);
-  font-weight: 600;
+  font-weight: 500;
   color: var(--tc-grey);
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -116,6 +102,49 @@
 
 .md a:hover {
   color: var(--tc-black);
+}
+
+.about-projects-section .about-projects-notion {
+  margin: 0 0 0.75rem;
+}
+
+
+.about-projects {
+  margin: 0 0 0.5rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.about-projects__title {
+  color: var(--tc-black);
+}
+
+.md .about-projects a .about-projects__title {
+  color: inherit;
+}
+
+.about-projects__year {
+  margin-left: 0.4rem;
+  font-weight: 400;
+  color: var(--tc-grey);
+  font-size: 0.95em;
+}
+
+.about-projects__soon {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: var(--tc-s);
+  color: var(--tc-grey);
+}
+
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 2rem 0;
 }
 
 .md .md-item {
@@ -150,6 +179,7 @@
   margin-top: 3rem;
   font-size: var(--tc-s);
   color: var(--tc-grey);
+  width: 100%;
 }
 
 .tc-foot p {
@@ -157,23 +187,16 @@
 }
 
 .page--twocol {
-  --tc-s: 14px;
-  --tc-m: 16px;
-  --tc-l: 24px;
-  --tc-xl: 30px;
-  --tc-black: #000;
-  --tc-grey: #666;
-  font-family: "Instrument Sans", sans-serif;
   max-width: 52rem;
   margin: 0 auto;
-  padding: 3rem;
+  padding: 2rem;
   align-items: stretch;
   box-sizing: border-box;
 }
 
 html:has(.page--twocol),
 body:has(.page--twocol) {
-  background: #fff;
+  background: var(--surface-card);
 }
 
 /* Artwork: single column, same tokens as .md */
@@ -193,19 +216,20 @@ body:has(.page--twocol) {
 .artwork-page .artwork-figure img {
   display: block;
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 0px solid transparent;
+  border-radius: var(--radius-sm);
 }
 
 .artwork-page .artwork-figure figcaption {
   margin: 0;
-  font-size: var(--tc-s, 14px);
-  color: var(--tc-grey, #666);
-  line-height: 1.45;
+  font-size: var(--tc-s);
+  color: var(--tc-grey);
+  line-height: 1.5;
 }
 
 .artwork-page .artwork-code {
-  font-size: var(--tc-s, 14px);
-  color: var(--tc-black, #000);
+  font-size: var(--tc-s);
+  color: var(--tc-black);
 }
 
 @media (max-width: 640px) {

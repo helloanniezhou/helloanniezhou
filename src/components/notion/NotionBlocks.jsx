@@ -1,4 +1,5 @@
 import React from "react";
+import { extractDimFromCaptionRuns } from "../../lib/notionExtractDim.js";
 import NotionRichText from "./NotionRichText";
 import "./NotionBlocks.css";
 
@@ -90,20 +91,24 @@ function NotionBlock({ block }) {
     if (block.unsupported === "hosted_file") {
       return (
         <p className="notion-block notion-image-fallback">
-          <em>Image is hosted in Notion; use an external URL for static hosting.</em>
         </p>
       );
     }
     if (!block.url) {
       return null;
     }
-    const imgStyle = notionImageStyle(block);
+    const { runs: captionRuns, maxWidth: dimFromCaption } = extractDimFromCaptionRuns(block.caption || []);
+    const imgStyle = notionImageStyle({
+      maxWidth: block.maxWidth ?? dimFromCaption,
+      width: block.width,
+      height: block.height
+    });
     return (
       <figure className="notion-block notion-figure">
         <img src={block.url} alt="" loading="lazy" decoding="async" style={imgStyle} />
-        {block.caption?.length ? (
+        {captionRuns?.length ? (
           <figcaption>
-            <NotionRichText runs={block.caption} />
+            <NotionRichText runs={captionRuns} />
           </figcaption>
         ) : null}
       </figure>

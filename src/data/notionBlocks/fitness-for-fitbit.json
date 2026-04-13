@@ -1,6 +1,6 @@
 {
   "sourcePageId": "213bef17e03580d0bce1d98d4f0ebfd4",
-  "fetchedAt": "2026-04-12T21:57:13.208Z",
+  "fetchedAt": "2026-04-13T04:37:41.746Z",
   "blocks": [
     {
       "id": "340bef17-e035-8002-bed8-d3bc88b8fbf8",
@@ -18,6 +18,12 @@
           "href": null
         }
       ]
+    },
+    {
+      "id": "341bef17-e035-807d-9f31-f70bce361369",
+      "type": "image",
+      "url": "/notion-images/fitness-for-fitbit/341bef17e035807d9f31f70bce361369.webp",
+      "caption": []
     },
     {
       "id": "340bef17-e035-801e-a767-cd6d357f3f7a",
@@ -74,6 +80,17 @@
       "id": "340bef17-e035-807f-be51-cd772199c60e",
       "type": "bulleted_list_item",
       "richText": [
+        {
+          "type": "text",
+          "text": "I was the ",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
         {
           "type": "text",
           "text": "UX Design lead ",
@@ -198,7 +215,7 @@
           "underline": false,
           "code": false,
           "color": "default",
-          "href": null
+          "href": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-watch-3/"
         },
         {
           "type": "text",
@@ -498,6 +515,23 @@
       "children": []
     },
     {
+      "id": "341bef17-e035-80d0-80ac-efb6ec4750de",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Design execution",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
       "id": "340bef17-e035-80fb-bc26-ce04ba6c4445",
       "type": "bulleted_list_item",
       "richText": [
@@ -525,6 +559,12 @@
         }
       ],
       "children": []
+    },
+    {
+      "id": "341bef17-e035-8094-807c-d0561565890e",
+      "type": "image",
+      "unsupported": "hosted_file",
+      "caption": []
     },
     {
       "id": "340bef17-e035-807c-bd79-f66388d2de7c",
@@ -556,8 +596,14 @@
       "children": []
     },
     {
+      "id": "341bef17-e035-804b-aed2-f4d2e51a48d3",
+      "type": "image",
+      "unsupported": "hosted_file",
+      "caption": []
+    },
+    {
       "id": "340bef17-e035-80bb-a085-db47422911c7",
-      "type": "paragraph",
+      "type": "heading_3",
       "richText": [
         {
           "type": "text",
@@ -665,7 +711,8 @@
       "id": "340bef17-e035-80b4-9d55-ed541d9d441e",
       "type": "image",
       "url": "/notion-images/fitness-for-fitbit/340bef17e03580b49d55ed541d9d441e.webp",
-      "caption": []
+      "caption": [],
+      "maxWidth": "100%"
     },
     {
       "id": "340bef17-e035-80e0-9cb9-c98db052b5e6",
@@ -699,7 +746,8 @@
       "id": "340bef17-e035-8043-a062-ca8ec62b52d3",
       "type": "image",
       "url": "/notion-images/fitness-for-fitbit/340bef17e0358043a062ca8ec62b52d3.webp",
-      "caption": []
+      "caption": [],
+      "maxWidth": "100%"
     },
     {
       "id": "340bef17-e035-80ad-8ad1-f50bdf38c674",
@@ -726,9 +774,39 @@
       "id": "340bef17-e035-801f-aff3-f2874da267df",
       "type": "bulleted_list_item",
       "richText": [
-        { "type": "text", "text": "Launched ", "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false, "color": "default", "href": null },
-        { "type": "text", "text": "Pixel Watch 3's fitness experience ", "bold": true, "italic": false, "strikethrough": false, "underline": false, "code": false, "color": "default", "href": null },
-        { "type": "text", "text": "and influenced Fitbit's strategic direction.", "bold": false, "italic": false, "strikethrough": false, "underline": false, "code": false, "color": "default", "href": null }
+        {
+          "type": "text",
+          "text": "Launched ",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "Pixel Watch 3's fitness experience ",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "and influenced Fitbit's strategic direction.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
       ],
       "children": []
     }

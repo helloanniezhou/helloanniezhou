@@ -76,9 +76,7 @@ Guidelines:
 - Section block: heading + narrative body
 - Impact panel: metric cards with short labels + evidence
 
-All new case-study pages should be composed from reusable blocks in:
-
-- `src/components/project/`
+Case-study pages use Notion-exported blocks (`NotionBlocks`) plus shared layout in `src/pages/ProjectDetailPage.css` under `article.project-doc`.
 
 ## Motion
 

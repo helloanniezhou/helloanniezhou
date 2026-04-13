@@ -1,14 +1,14 @@
 {
-  "sourcePageId": "340bef17e03580a59b27cdd340bf93e1",
-  "fetchedAt": "2026-04-13T04:37:41.419Z",
+  "sourcePageId": "340bef17e035803f83fad63eb6340da4",
+  "fetchedAt": "2026-04-13T04:37:42.102Z",
   "blocks": [
     {
-      "id": "340bef17-e035-8070-acee-f2ad71eca57d",
+      "id": "340bef17-e035-8040-9992-cd740e6786e5",
       "type": "paragraph",
       "richText": [
         {
           "type": "text",
-          "text": "2017 — 2019",
+          "text": "2021",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -20,12 +20,14 @@
       ]
     },
     {
-      "id": "341bef17-e035-80c0-8d6f-d5cd3dbb9132",
-      "type": "paragraph",
-      "richText": []
+      "id": "341bef17-e035-8057-b64e-e383adc7093d",
+      "type": "image",
+      "url": "/notion-images/airwallex/341bef17e0358057b64ee383adc7093d.png",
+      "caption": [],
+      "maxWidth": "100%"
     },
     {
-      "id": "340bef17-e035-8086-8acd-f2d2dad8531d",
+      "id": "340bef17-e035-8045-ae15-e9649c7ba12f",
       "type": "heading_3",
       "richText": [
         {
@@ -42,12 +44,12 @@
       ]
     },
     {
-      "id": "340bef17-e035-800e-ac90-fb278b395c6c",
+      "id": "340bef17-e035-80d4-8f2e-ced1d97840a5",
       "type": "paragraph",
       "richText": [
         {
           "type": "text",
-          "text": "Google Go is a lightweight search app built for first-time smartphone users in regions like India and Sub-Saharan Africa. I led the design of key features that made Google Search more accessible for users with low literacy and digital fluency.",
+          "text": "Airwallex is a fintech unicorn startup in the APAC region. As the Product Manager, I led the end-to-end development of Payment Link, a no-code tool that enables merchants to collect payments by sharing a URL. From problem discovery to launch, I drove alignment across design, engineering, operations, and go-to-market teams to ship a product serving businesses across markets and use cases.",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -59,7 +61,7 @@
       ]
     },
     {
-      "id": "340bef17-e035-809b-b82c-d90a0b2413f3",
+      "id": "340bef17-e035-8028-bb79-e92b86772251",
       "type": "heading_3",
       "richText": [
         {
@@ -76,12 +78,12 @@
       ]
     },
     {
-      "id": "340bef17-e035-80ff-b5ca-ee67b15509d6",
+      "id": "340bef17-e035-8006-bf61-d31efe99538e",
       "type": "paragraph",
       "richText": [
         {
           "type": "text",
-          "text": "I was a UX designer responsible for onboarding and user education.",
+          "text": "I was the Product Manager and launched the product from 0 to 1.",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -93,352 +95,7 @@
       ]
     },
     {
-      "id": "340bef17-e035-80d8-b29b-dfa6f17b42f3",
-      "type": "heading_3",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Team",
-          "bold": true,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ]
-    },
-    {
-      "id": "340bef17-e035-80e8-9e56-f97a754d7a15",
-      "type": "paragraph",
-      "richText": [
-        {
-          "type": "text",
-          "text": "I was in a group of 6 UXers, 2 PMs, and a team of engineers.",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ]
-    },
-    {
-      "id": "340bef17-e035-805e-b393-c75e6158e17e",
-      "type": "heading_3",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Results",
-          "bold": true,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ]
-    },
-    {
-      "id": "340bef17-e035-80e3-8403-e7d0f63adfb1",
-      "type": "bulleted_list_item",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Karaoke mode reached X% of Google Go Search DAU with 1X% weekly retention, and earned a UK patent for its invention.",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ],
-      "children": []
-    },
-    {
-      "id": "340bef17-e035-8077-a314-fa1aeadde839",
-      "type": "bulleted_list_item",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Mini Learning videos drove a measurable lift, increasing feature usage by up to 1X%.",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ],
-      "children": []
-    },
-    {
-      "id": "340bef17-e035-807a-b42c-eb4313e31742",
-      "type": "heading_3",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Challenge",
-          "bold": true,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ]
-    },
-    {
-      "id": "340bef17-e035-8055-a39d-fa0737447cd4",
-      "type": "paragraph",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Traditional Google Search was too text-heavy and minimalist for users unfamiliar with digital interfaces.",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ]
-    },
-    {
-      "id": "340bef17-e035-8065-99bc-ed684159c639",
-      "type": "quote",
-      "richText": [
-        {
-          "type": "text",
-          "text": "How might we make Google Go intuitive for new internet users in the emerging markets? ",
-          "bold": true,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ]
-    },
-    {
-      "id": "341bef17-e035-8013-8dde-d2c9246de579",
-      "type": "heading_3",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Solutions",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ]
-    },
-    {
-      "id": "340bef17-e035-80df-a017-f176dbbb7205",
-      "type": "numbered_list_item",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Karaoke mode reads out the page aloud to help people read",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": "\n",
-          "bold": false,
-          "italic": true,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ],
-      "children": []
-    },
-    {
-      "id": "340bef17-e035-803d-9c95-e32ac94d30e0",
-      "type": "image",
-      "url": "/notion-images/google-go/340bef17e035803d9c95e32ac94d30e0.gif",
-      "caption": [],
-      "maxWidth": 300
-    },
-    {
-      "id": "340bef17-e035-801d-8fab-f2165626e8df",
-      "type": "numbered_list_item",
-      "richText": [
-        {
-          "type": "text",
-          "text": "A language onboarding I designed to help Indian users set the app at first go\n",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ],
-      "children": []
-    },
-    {
-      "id": "341bef17-e035-8058-8774-d52f5ff52f03",
-      "type": "image",
-      "url": "/notion-images/google-go/341bef17e03580588774d52f5ff52f03.png",
-      "caption": [],
-      "maxWidth": 300
-    },
-    {
-      "id": "340bef17-e035-80fd-9fb4-e2a8b1f0d41e",
-      "type": "numbered_list_item",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Mini learnings are short videos to help users learn what to do in the app.",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ],
-      "children": []
-    },
-    {
-      "id": "340bef17-e035-80b7-81b7-ef5932678f5d",
-      "type": "image",
-      "url": "/notion-images/google-go/340bef17e03580b781b7ef5932678f5d.gif",
-      "caption": [],
-      "maxWidth": 300
-    },
-    {
-      "id": "340bef17-e035-80ea-aaa9-ef22351654c3",
-      "type": "heading_3",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Process",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ]
-    },
-    {
-      "id": "340bef17-e035-8039-8304-daaeb0de9aa9",
-      "type": "numbered_list_item",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Ground the design in real user needs: ",
-          "bold": true,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": "Partnered with researchers on in-home visits across India and Nigeria. We observed how first-time smartphone users navigated digital content, revealing critical gaps in literacy, confidence, and comprehension.",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ],
-      "children": []
-    },
-    {
-      "id": "340bef17-e035-805c-9705-d8eb9f45501b",
-      "type": "numbered_list_item",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Prototype solutions: ",
-          "bold": true,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": "Collaborated with PMs and engineers to ideate and prototype audio-first interactions and simplified UI patterns. I created high-fidelity, interactive prototypes to test with low-literacy users in rapid research sessions.",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ],
-      "children": []
-    },
-    {
-      "id": "340bef17-e035-8012-8f04-e429d47858a2",
-      "type": "numbered_list_item",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Launch, learn, and scale: ",
-          "bold": true,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": "Post-launch, we monitored DAU, retention, and feature adoption weekly. These insights directly informed design iterations, content strategy, and future onboarding flows.",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ],
-      "children": []
-    },
-    {
-      "id": "340bef17-e035-8061-8307-e7ef02f6f14e",
+      "id": "340bef17-e035-80b2-ac33-dec13309f9f0",
       "type": "heading_3",
       "richText": [
         {
@@ -455,23 +112,12 @@
       ]
     },
     {
-      "id": "340bef17-e035-80ab-9a38-ea3159804f23",
+      "id": "340bef17-e035-80bc-8c1a-d8755952e2f6",
       "type": "bulleted_list_item",
       "richText": [
         {
           "type": "text",
-          "text": "DAU & retention: ",
-          "bold": true,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": "Karaoke mode reached X% of Google Go Search DAU with 1X% weekly retention.",
+          "text": "In August 2021, Airwallex Payment Link launched to all users in AU, EU, and selected users in HK.",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -484,12 +130,23 @@
       "children": []
     },
     {
-      "id": "340bef17-e035-80a3-ac79-e4017922ce32",
+      "id": "340bef17-e035-809c-9ff8-d4ecce47ac9b",
       "type": "bulleted_list_item",
       "richText": [
         {
           "type": "text",
-          "text": "Feature usage: ",
+          "text": "It reached ",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "$160K transaction volume",
           "bold": true,
           "italic": false,
           "strikethrough": false,
@@ -500,7 +157,7 @@
         },
         {
           "type": "text",
-          "text": "Mini Learning videos increased feature usage by up to 1X%.",
+          "text": " within 2 weeks. Now the product has transaction volume of X million per month.",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -513,23 +170,12 @@
       "children": []
     },
     {
-      "id": "340bef17-e035-802a-8faa-c4e1f4577c38",
+      "id": "340bef17-e035-8099-844a-e9012a4d973b",
       "type": "bulleted_list_item",
       "richText": [
         {
           "type": "text",
-          "text": "Patent: ",
-          "bold": true,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": "Earned a UK patent for the Karaoke mode design.",
+          "text": "The roadmap was adopted and 3 PMs are now executing the strategy.",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -542,9 +188,334 @@
       "children": []
     },
     {
-      "id": "340bef17-e035-804f-89d9-c62fe8fcf63c",
+      "id": "340bef17-e035-802c-8a4c-e42cb6d26f2a",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "The Opportunity",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-8017-8754-f4c92eab044a",
       "type": "paragraph",
-      "richText": []
+      "richText": [
+        {
+          "type": "text",
+          "text": "Airwallex's core payments infrastructure was powerful but lacked a lightweight no-code entry point for merchants who did not want API integrations. We saw growing demand from education providers, event organizers, and SMBs who needed something simpler in low-dev-resource environments.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-80e9-a7c6-daed8ccb96eb",
+      "type": "quote",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Build a link-based payment tool that was fast to create, flexible to customize, and trusted by users from day one.",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-8013-a19b-e893de64a7eb",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Understand the problem space",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-8076-b94c-d2bfb78d7383",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "To shape the direction of Payment Link, I partnered with UX to run surveys and interviews across markets. Merchants consistently wanted strong pricing, broad payment method coverage, integration with back-office tools, and flexible customer-facing customization.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-8053-919e-dd23ce2f8a69",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "While many existing merchants were in Hong Kong and China, needs were highly localized and less aligned with early product capabilities. We identified clearer product-market fit in Australia, especially for e-commerce and professional services, and focused v1 there.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-801c-9a2c-f114896ac71b",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Define product strategy",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-8095-bd52-e61ac0b29755",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "I spoke with sales, marketing, and operations teams to understand the competitive landscape. Airwallex had a strong cross-border pricing edge, but we were missing key payment methods like AMEX and Discover in English-speaking markets.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-80df-a324-e880e9c87fbc",
+      "type": "bulleted_list_item",
+      "richText": [
+        {
+          "type": "text",
+          "text": "🚀 ",
+          "bold": false,
+          "italic": true,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "Launch quickly to serve the cross-border use case we could win today.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "340bef17-e035-808f-ae79-d6e6eb0dd814",
+      "type": "bulleted_list_item",
+      "richText": [
+        {
+          "type": "text",
+          "text": "💳 ",
+          "bold": false,
+          "italic": true,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "Prioritize expanding payment methods to stay competitive as we scaled.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "340bef17-e035-8096-94ed-d49d341d5457",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Design",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-80ca-9224-c00decb5c59e",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Based on the research, I redefined use cases and edge cases and worked with design to iterate the UX with direct customer feedback.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-80db-9bc1-d03c1a4a364a",
+      "type": "image",
+      "url": "/notion-images/airwallex/340bef17e03580db9bc1d03c1a4a364a.png",
+      "caption": []
+    },
+    {
+      "id": "340bef17-e035-8033-8b7e-d26508c96162",
+      "type": "image",
+      "url": "/notion-images/airwallex/340bef17e03580338b7ed26508c96162.jpg",
+      "caption": []
+    },
+    {
+      "id": "340bef17-e035-8017-b6d2-c4beb199040e",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Execution",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-806b-a280-c2b82bffb442",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "To ensure a smooth rollout, I established lightweight processes for cross-functional reviews, decision-making, and launch readiness. Working across time zones, I kept engineering, design, ops, and GTM aligned with clear documentation and async coordination.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-8018-9d19-e986853d4296",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Impact",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "340bef17-e035-805f-9ebe-c4b3bf065705",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "In August 2021, Get Paid launched in AU, EU and selected users in HK and reached ",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "$160K transaction volume",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": " within 2 weeks.",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
     }
   ]
 }

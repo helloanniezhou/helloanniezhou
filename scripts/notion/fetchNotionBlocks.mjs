@@ -6,7 +6,7 @@
  * 2. Share each project page with the integration
  * 3. Put the secret in env: create a root `.env` with NOTION_TOKEN=... (gitignored), or run
  *    `export NOTION_TOKEN=secret_...` in your shell.
- * 4. Edit src/data/notionProjectPages.json: { "your-slug": "notion-page-uuid" }
+ * 4. Edit src/data/notionProjectPages.json: { "your-slug": "notion-page-uuid" } (includes about-projects for About)
  * 5. npm run notion:sync
  *
  * Images:
@@ -15,14 +15,14 @@
  *   Commit those files with the repo, or re-run sync in CI before build (requires network).
  *
  * Image size (optional):
- * - In Notion, start the image caption with a line `dim:480` or `dim:480px` (then optional caption text) to set maxWidth in px.
- * - Or edit the generated JSON: add "maxWidth", "width", and/or "height" (numbers = px). Re-sync merges these by block id
- *   when the same block still exists so edits are kept.
+ * - Start the caption with `dim:<value>` (stripped on site). Bare number = max-width in px; add a unit for %, rem, etc. (e.g. dim:100%, dim:24rem).
+ * - Or edit JSON: "maxWidth", "width", "height" (numbers = px, or strings like "50%"). Re-sync merges by block id when the block still exists.
  */
 
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { extractDimFromCaptionRuns } from "../../src/lib/notionExtractDim.js";
 
 const NOTION_VERSION = "2022-06-28";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -94,24 +94,6 @@ async function listChildren(token, blockId) {
     }
   }
   return results;
-}
-
-/** Caption line `dim:400` or `dim:400px` at start of first text run → maxWidth; remainder becomes visible caption. */
-function extractDimFromCaption(richText) {
-  if (!richText?.length) return { richText, maxWidth: undefined };
-  const first = richText[0];
-  if (first?.type !== "text") return { richText, maxWidth: undefined };
-  const m = first.text.match(/^dim:\s*(\d+)\s*px?\s*/i);
-  if (!m) return { richText, maxWidth: undefined };
-  const maxWidth = Number(m[1]);
-  const rest = first.text.slice(m[0].length).replace(/^\n+/, "");
-  const newRuns = [...richText];
-  if (rest) {
-    newRuns[0] = { ...first, text: rest };
-  } else {
-    newRuns.shift();
-  }
-  return { richText: newRuns, maxWidth };
 }
 
 function walkBlocks(blocks, visit) {
@@ -215,7 +197,7 @@ async function transformBlock(block, slug) {
   if (t === "image") {
     const im = block.image;
     const captionMapped = mapRichText(im?.caption || []);
-    const { richText: caption, maxWidth: dimMaxWidth } = extractDimFromCaption(captionMapped);
+    const { runs: caption, maxWidth: dimMaxWidth } = extractDimFromCaptionRuns(captionMapped);
     if (im?.type === "external" && im.external?.url) {
       const out = { id, type: t, url: im.external.url, caption };
       if (dimMaxWidth != null) out.maxWidth = dimMaxWidth;

@@ -1,4 +1,4 @@
-/* Case study: semantic markdown-like markup under article.project-doc */
+/* Case study: semantic markup under article.project-doc (Notion + simple fallback) */
 
 article.project-doc {
   display: flex;
@@ -6,7 +6,6 @@ article.project-doc {
   gap: 1.75rem;
   width: 100%;
   max-width: 640px;
- 
 }
 
 article.project-doc > nav a {
@@ -14,15 +13,15 @@ article.project-doc > nav a {
   flex-direction: row;
   align-items: center;
   gap: 0.35rem;
-  font-size: var(--tc-s, 14px);
+  font-size: var(--tc-s);
   font-weight: 400;
-  color: var(--tc-grey, #666);
+  color: var(--tc-grey);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
 article.project-doc > nav a:hover {
-  color: var(--tc-black, #000);
+  color: var(--tc-black);
 }
 
 article.project-doc > header {
@@ -35,14 +34,14 @@ article.project-doc > header h1 {
   margin: 0;
   font-size: var(--tc-l, 28px);
   font-weight: 700;
-  color: var(--tc-black, #000);
+  color: var(--tc-black);
   line-height: 1.2;
 }
 
 article.project-doc > header p {
   margin: 0;
-  font-size: var(--tc-s, 14px);
-  color: var(--tc-grey, #666);
+  font-size: var(--tc-s);
+  color: var(--tc-grey);
   line-height: 1.45;
 }
 
@@ -54,27 +53,27 @@ article.project-doc section {
 
 article.project-doc section h2 {
   margin: 0;
-  font-size: var(--tc-m, 16px);
+  font-size: var(--tc-m);
   font-weight: 600;
-  color: var(--tc-black, #000);
+  color: var(--tc-black);
   line-height: 1.35;
 }
 
 article.project-doc section > p {
   margin: 0;
-  font-size: var(--tc-m, 16px);
+  font-size: var(--tc-m);
   font-weight: 400;
-  color: var(--tc-grey, #666);
+  color: var(--tc-grey);
   line-height: 1.55;
 }
 
 article.project-doc strong {
-  color: var(--tc-black, #000);
+  color: var(--tc-black);
   font-weight: 600;
 }
 
 article.project-doc .accent {
-  color: var(--tc-black, #000);
+  color: var(--tc-black);
   font-weight: 600;
 }
 
@@ -92,19 +91,19 @@ article.project-doc dl {
 
 article.project-doc dt {
   margin: 0;
-  font-size: var(--tc-s, 14px);
+  font-size: var(--tc-s);
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--tc-grey, #666);
+  color: var(--tc-grey);
 }
 
 article.project-doc dd {
   margin: 0;
   padding: 0 0 0.75rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  font-size: var(--tc-m, 16px);
-  color: var(--tc-grey, #666);
+  font-size: var(--tc-m);
+  color: var(--tc-grey);
   line-height: 1.55;
 }
 
@@ -128,8 +127,8 @@ article.project-doc figure > img {
 
 article.project-doc figcaption {
   margin: 0;
-  font-size: var(--tc-s, 14px);
-  color: var(--tc-grey, #666);
+  font-size: var(--tc-s);
+  color: var(--tc-grey);
   line-height: 1.45;
 }
 
@@ -153,9 +152,9 @@ article.project-doc blockquote {
 
 article.project-doc blockquote p {
   margin: 0;
-  font-size: var(--tc-m, 16px);
+  font-size: var(--tc-m);
   font-weight: 500;
-  color: var(--tc-black, #000);
+  color: var(--tc-black);
   line-height: 1.45;
 }
 
@@ -183,15 +182,15 @@ article.project-doc ul li:last-child {
 
 article.project-doc ul li h3 {
   margin: 0;
-  font-size: var(--tc-m, 16px);
+  font-size: var(--tc-m);
   font-weight: 600;
-  color: var(--tc-black, #000);
+  color: var(--tc-black);
 }
 
 article.project-doc ul li > p {
   margin: 0;
-  font-size: var(--tc-s, 14px);
-  color: var(--tc-grey, #666);
+  font-size: var(--tc-s);
+  color: var(--tc-grey);
   line-height: 1.45;
 }
 
@@ -199,7 +198,7 @@ article.project-doc ul li figure[data-viz="circle"] {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  border: 2px solid var(--tc-grey, #666);
+  border: 2px solid var(--tc-grey);
   flex-shrink: 0;
 }
 
@@ -216,7 +215,7 @@ article.project-doc ul li figure[data-viz="bars"] i {
   width: 56px;
   height: 10px;
   border-radius: 2px;
-  background: var(--tc-grey, #666);
+  background: var(--tc-grey);
   font-style: normal;
 }
 
@@ -227,7 +226,7 @@ article.project-doc ul li > i:first-child {
 }
 
 article.project-doc ul li > i:first-child + p {
-  font-size: var(--tc-m, 16px);
+  font-size: var(--tc-m);
 }
 
 article.project-doc section > img {
@@ -242,20 +241,19 @@ article.project-doc section > p > strong {
 
 article.project-doc section h3 {
   margin: 0;
-  font-size: var(--tc-m, 16px);
+  font-size: var(--tc-m);
   font-weight: 600;
-  color: var(--tc-black, #000);
+  color: var(--tc-black);
   line-height: 1.35;
 }
 
 article.project-doc section h3 + p {
   margin: 0;
-  font-size: var(--tc-m, 16px);
-  color: var(--tc-grey, #666);
+  font-size: var(--tc-m);
+  color: var(--tc-grey);
   line-height: 1.5;
 }
 
-/* Impact: section > h2 + articles */
 article.project-doc section:has(> h2 + article) {
   gap: 1rem;
 }
@@ -267,29 +265,28 @@ article.project-doc section > article {
 }
 
 article.project-doc section > article h3 {
-  font-size: var(--tc-s, 14px);
+  font-size: var(--tc-s);
   font-weight: 600;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--tc-black, #000);
+  color: var(--tc-black);
 }
 
 article.project-doc section > article p {
   margin: 0;
-  font-size: var(--tc-m, 16px);
-  color: var(--tc-grey, #666);
+  font-size: var(--tc-m);
+  color: var(--tc-grey);
   line-height: 1.5;
 }
 
 article.project-doc section > article p strong {
-  color: var(--tc-black, #000);
+  color: var(--tc-black);
   font-weight: 600;
 }
 
 article.project-doc section > img + p {
   margin: 0;
-  font-size: var(--tc-m, 16px);
-  color: var(--tc-grey, #666);
+  font-size: var(--tc-m);
+  color: var(--tc-grey);
   line-height: 1.5;
 }
 

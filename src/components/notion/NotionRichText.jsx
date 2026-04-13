@@ -1,13 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { resolveNotionHref } from "../../lib/notionHref";
 
 function renderRun(run) {
   const text = run.text ?? "";
   if (run.href) {
-    return (
-      <a href={run.href} target="_blank" rel="noreferrer">
-        {text}
-      </a>
-    );
+    const resolved = resolveNotionHref(run.href);
+    if (resolved.kind === "internal") {
+      return <Link to={resolved.to}>{text}</Link>;
+    }
+    if (resolved.kind === "external") {
+      return (
+        <a href={resolved.href} target="_blank" rel="noreferrer">
+          {text}
+        </a>
+      );
+    }
   }
 
   let el = text;

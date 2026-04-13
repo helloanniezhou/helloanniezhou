@@ -1,43 +1,45 @@
-/*
- * Notion JSON blocks: share TwoColumnLayout .md column tokens and patterns
- * (.page--twocol defines --tc-s/m/l, --tc-black, --tc-grey; .md sets h1/h2/p and links).
- */
+/* Notion blocks inside case studies: typography aligns with TwoColumnLayout .md (h1/h2 via .md h1/h2). */
 
 article.project-doc .notion-blocks.md {
   max-width: 40rem;
+  gap: 1rem;
 }
 
 article.project-doc .notion-block {
   margin: 0.2rem 0;
 }
 
-/* h1 / h2 / direct paragraphs: inherit from TwoColumnLayout.css .md h1, .md h2, .md > p */
+article.project-doc .notion-block {
+  font-size: var(--tc-m);
+  color: var(--tc-grey);
+  line-height: 1.55;
+}
 
-/* h3: not defined in .md — match body scale, black */
+
 article.project-doc .notion-blocks.md .notion-h3 {
   margin: 0;
-  font-size: var(--tc-m, 16px);
+  font-size: var(--tc-l);
   font-weight: 600;
-  color: var(--tc-black, #000);
-  line-height: 1.35;
-}
-}
-
-article.project-doc .notion-blocks.md > .notion-h3:first-child {
-  margin-top: 0;
+  color: var(--tc-black);
+  line-height: 1.5;
 }
 
 article.project-doc .notion-blocks.md > .notion-h3 ~ .notion-h3 {
   margin-top: 1.75rem;
 }
 
-/* Lists */
 article.project-doc .notion-list {
-
   padding-left: 1.25rem;
   font-size: var(--tc-m);
   font-weight: 400;
   color: var(--tc-grey);
+  line-height: 1.55;
+}
+
+.notion-blocks .notion-block.notion-li.notion-li--bullet {
+  font-size: var(--tc-m);
+  color: var(--tc-grey);
+  padding: 0.5rem 0;
   line-height: 1.55;
 }
 
@@ -72,15 +74,13 @@ article.project-doc .notion-li .notion-blocks {
   margin-top: 0.35rem;
 }
 
-/* Quote: prose like .md > p */
 article.project-doc .notion-quote {
-  margin: 0 0 1.75rem;
+  margin: 1.75rem 0;
   padding-left: 1rem;
   border-left: 3px solid rgba(0, 0, 0, 0.08);
 }
 
 article.project-doc .notion-quote p {
-  margin: 0;
   font-size: var(--tc-m);
   font-weight: 400;
   color: var(--tc-grey);
@@ -94,7 +94,6 @@ article.project-doc .notion-divider {
   margin: 0 0 1.75rem;
 }
 
-/* Figures: same as .artwork-page .artwork-figure */
 article.project-doc .notion-figure {
   margin: 0 0 1.75rem;
   display: flex;
@@ -105,9 +104,8 @@ article.project-doc .notion-figure {
 article.project-doc .notion-figure img {
   display: block;
   width: 100%;
-  max-width: 300px;
   height: auto;
-  border: 0px solid rgba(0, 0, 0, 0.08);
+  border: 0px solid transparent;
 }
 
 article.project-doc .notion-figure figcaption {
@@ -185,7 +183,6 @@ article.project-doc .notion-unsupported {
   color: var(--tc-grey);
 }
 
-/* Links: match .md a (TwoColumnLayout.css) — reinforce inside notion for specificity */
 article.project-doc .notion-blocks.md a {
   color: var(--tc-grey);
   text-decoration: underline;

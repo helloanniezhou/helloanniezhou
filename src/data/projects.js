@@ -1,3 +1,4 @@
+/** Portfolio case studies and project metadata (project detail routes, nav). */
 const projects = [
   {
     slug: "ai-for-fitbit",
