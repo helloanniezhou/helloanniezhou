@@ -1,6 +1,6 @@
 {
   "sourcePageId": "340bef17e03580a59b27cdd340bf93e1",
-  "fetchedAt": "2026-04-13T04:37:41.419Z",
+  "fetchedAt": "2026-04-13T18:55:33.811Z",
   "blocks": [
     {
       "id": "340bef17-e035-8070-acee-f2ad71eca57d",
@@ -20,9 +20,10 @@
       ]
     },
     {
-      "id": "341bef17-e035-80c0-8d6f-d5cd3dbb9132",
-      "type": "paragraph",
-      "richText": []
+      "id": "341bef17-e035-804c-bbe2-c884f9c11af7",
+      "type": "image",
+      "url": "/notion-images/google-go/341bef17e035804cbbe2c884f9c11af7.jpg",
+      "caption": []
     },
     {
       "id": "340bef17-e035-8086-8acd-f2d2dad8531d",
@@ -81,41 +82,7 @@
       "richText": [
         {
           "type": "text",
-          "text": "I was a UX designer responsible for onboarding and user education.",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ]
-    },
-    {
-      "id": "340bef17-e035-80d8-b29b-dfa6f17b42f3",
-      "type": "heading_3",
-      "richText": [
-        {
-          "type": "text",
-          "text": "Team",
-          "bold": true,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
-        }
-      ]
-    },
-    {
-      "id": "340bef17-e035-80e8-9e56-f97a754d7a15",
-      "type": "paragraph",
-      "richText": [
-        {
-          "type": "text",
-          "text": "I was in a group of 6 UXers, 2 PMs, and a team of engineers.",
+          "text": "I was a UX designer responsible for onboarding and user education, in a group of 6 UXers, 2 PMs, and a team of engineers.",
           "bold": false,
           "italic": false,
           "strikethrough": false,

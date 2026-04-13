@@ -1,6 +1,6 @@
 {
   "sourcePageId": "340bef17e03580d6a55adfa2e2c82c7c",
-  "fetchedAt": "2026-04-13T04:54:22.080Z",
+  "fetchedAt": "2026-04-13T18:55:32.685Z",
   "blocks": [
     {
       "id": "341bef17-e035-80e9-8f7e-c9df08d44ecd",
@@ -19,7 +19,29 @@
         },
         {
           "type": "text",
-          "text": "— Prototyped 0→1 AI product concepts, exploring new interaction paradigms.",
+          "text": "— Prototyped 0→1 AI product concepts. Check out ",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "Google Labs",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": "https://labs.google/"
+        },
+        {
+          "type": "text",
+          "text": ". ",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -44,11 +66,11 @@
           "underline": false,
           "code": false,
           "color": "default",
-          "href": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-watch-3/"
+          "href": "/213bef17e03580d0bce1d98d4f0ebfd4"
         },
         {
           "type": "text",
-          "text": " — Launched personalized fitness experiences on Pixel Watch to drive daily health engagement. ",
+          "text": " — Build an AI-powered health coach and led the design of personalized fitness experiences on Pixel Watch 3.  ",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -66,7 +88,7 @@
           "underline": false,
           "code": false,
           "color": "default",
-          "href": "/213bef17e03580d0bce1d98d4f0ebfd4"
+          "href": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-watch-3/"
         }
       ],
       "children": []
@@ -84,11 +106,11 @@
           "underline": false,
           "code": false,
           "color": "default",
-          "href": "https://techcrunch.com/2019/08/20/googles-lightweight-search-app-google-go-launches-to-android-users-worldwide/"
+          "href": "/340bef17e03580a59b27cdd340bf93e1"
         },
         {
           "type": "text",
-          "text": " — Scaled lightweight search to emerging markets with a fast, low-data Android app. ",
+          "text": " — Brought lightweight search to emerging markets with a fast, low-data Android app. ",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -106,7 +128,7 @@
           "underline": false,
           "code": false,
           "color": "default",
-          "href": "/340bef17e03580a59b27cdd340bf93e1"
+          "href": "https://techcrunch.com/2019/08/20/googles-lightweight-search-app-google-go-launches-to-android-users-worldwide/"
         }
       ],
       "children": []
@@ -124,11 +146,11 @@
           "underline": false,
           "code": false,
           "color": "default",
-          "href": "https://www.airwallex.com/us/payments/payment-links?utm_source=google&utm_medium=paid_search_nb&utm_campaign=v01_amer_us_ib_dg_cust_bofu_peb_ao-pd_pa&utm_term=payment%20link_b&campaign_id=22895075649&adgroup_id=180858754541&ad_id=769668638369&device=c&placement=&gad_source=1&gad_campaignid=22895075649&gbraid=0AAAAAoMioLwaZLJVmXw6RTsUZJ541c8XD&gclid=CjwKCAjwhe3OBhABEiwA6392zNz6VbhPOEntXL27B1Z3O9fuk9rim0n18DVisBUmXXRILYETXa_sxRoCqsMQAvD_BwE"
+          "href": "/340bef17e035803f83fad63eb6340da4"
         },
         {
           "type": "text",
-          "text": " — Took payment links 0→1, enabling global, no-code payment acceptance. ",
+          "text": " — Launched Payment Links, enabling global, no-code payment acceptance. ",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -146,7 +168,7 @@
           "underline": false,
           "code": false,
           "color": "default",
-          "href": "/340bef17e035803f83fad63eb6340da4"
+          "href": "https://www.airwallex.com/us/payments/payment-links?utm_source=google&utm_medium=paid_search_nb&utm_campaign=v01_amer_us_ib_dg_cust_bofu_peb_ao-pd_pa&utm_term=payment%20link_b&campaign_id=22895075649&adgroup_id=180858754541&ad_id=769668638369&device=c&placement=&gad_source=1&gad_campaignid=22895075649&gbraid=0AAAAAoMioLwaZLJVmXw6RTsUZJ541c8XD&gclid=CjwKCAjwhe3OBhABEiwA6392zNz6VbhPOEntXL27B1Z3O9fuk9rim0n18DVisBUmXXRILYETXa_sxRoCqsMQAvD_BwE"
         }
       ],
       "children": []
@@ -164,11 +186,11 @@
           "underline": false,
           "code": false,
           "color": "default",
-          "href": "https://blog.google/products-and-platforms/platforms/google-pay/reimagined-pay-save-manage-expenses-and-more/"
+          "href": null
         },
         {
           "type": "text",
-          "text": " — Helped reimagine Google Pay into an all-in-one payments and money management app.",
+          "text": " — Reimagine Google Pay into an all-in-one payments and money management app. ",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -176,6 +198,17 @@
           "code": false,
           "color": "default",
           "href": null
+        },
+        {
+          "type": "text",
+          "text": "Read more",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": "https://blog.google/products-and-platforms/platforms/google-pay/reimagined-pay-save-manage-expenses-and-more/"
         }
       ],
       "children": []
@@ -193,11 +226,11 @@
           "underline": false,
           "code": false,
           "color": "default",
-          "href": "https://blog.google/products-and-platforms/products/assistant/your-assistant-getting-better-on-google-home-and-your-phone/"
+          "href": null
         },
         {
           "type": "text",
-          "text": " — Advanced voice and multimodal experiences across mobile and smart home devices.",
+          "text": " — Advanced voice and multimodal experiences across mobile and smart home devices. ",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -205,9 +238,43 @@
           "code": false,
           "color": "default",
           "href": null
+        },
+        {
+          "type": "text",
+          "text": "Read more",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": "https://blog.google/products-and-platforms/products/assistant/your-assistant-getting-better-on-google-home-and-your-phone/"
         }
       ],
       "children": []
+    },
+    {
+      "id": "341bef17-e035-8005-8174-f067975d80b7",
+      "type": "paragraph",
+      "richText": []
+    },
+    {
+      "id": "340bef17-e035-80a5-9b27-cdd340bf93e1",
+      "type": "unsupported",
+      "unsupported": true,
+      "rawType": "child_page"
+    },
+    {
+      "id": "213bef17-e035-80d0-bce1-d98d4f0ebfd4",
+      "type": "unsupported",
+      "unsupported": true,
+      "rawType": "child_page"
+    },
+    {
+      "id": "340bef17-e035-803f-83fa-d63eb6340da4",
+      "type": "unsupported",
+      "unsupported": true,
+      "rawType": "child_page"
     }
   ]
 }

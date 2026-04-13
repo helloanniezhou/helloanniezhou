@@ -1,17 +1,16 @@
 :root {
   --surface-card: hsl(0 0% 100%);
-  --text-main: hsl(240 10% 12%);
-  --text-grey: hsl(240 8% 38%);
+  --tc-black: hsl(240 10% 12%);
+  --tc-grey: hsl(240 8% 38%);
+  --accent: hsl(240 100% 50%);
   --radius-sm: 12px;
   --space-3: 1.5rem;
 
   /* Type scale */
-  --tc-s: 1.15rem;
-  --tc-m: 1.3rem;
-  --tc-l: 1.55rem;
-  --tc-xl: 1.8rem;
-  --tc-black: var(--text-main);
-  --tc-grey: var(--text-grey);
+  --tc-s: 0.8rem;
+  --tc-m: 1.25 rem;
+  --tc-l: 1.5rem;
+  --tc-xl: 1.75rem;
 }
 
 *,
@@ -29,7 +28,7 @@ body,
 
 body {
   font-family: "Instrument Sans", sans-serif;
-  color: var(--text-main);
+  color: var(--tc-black);
 }
 
 .page {

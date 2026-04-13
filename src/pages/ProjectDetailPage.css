@@ -69,7 +69,7 @@ article.project-doc section > p {
 
 article.project-doc strong {
   color: var(--tc-black);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 article.project-doc .accent {

@@ -6,9 +6,14 @@ const aboutData = {
   ],
   workExperience: [
     {
-      time: "2022 — Now",
-      role: "UX Design Manager & Lead at Google Fitbit",
+      time: "2025 — Now",
+      role: "Staff UX Designer at Google Labs",
       location: "Mountain View, CA"
+    },
+    {
+      time: "2022 — 2025",
+      role: "UX Design Manager & Lead at Google Fitbit",
+      location: "San Francisco, CA"
     },
     {
       time: "2021",

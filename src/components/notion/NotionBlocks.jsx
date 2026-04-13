@@ -155,18 +155,8 @@ function NotionBlock({ block }) {
   }
 
   if (block.unsupported) {
-    return (
-      <p className="notion-block notion-unsupported">
-        <small>Unsupported block: {block.rawType || t}</small>
-      </p>
-    );
+    return null;
   }
-
-  return (
-    <p className="notion-block notion-unsupported">
-      <small>Unknown block type: {t}</small>
-    </p>
-  );
 }
 
 /** Renders list groups: consecutive list items wrapped in ul/ol */
