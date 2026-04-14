@@ -1,5 +1,6 @@
 import React, { useEffect, useLayoutEffect } from "react";
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import TwoColumnLayout from "./components/TwoColumnLayout";
 import AboutPage from "./pages/AboutPage";
 import ArtworkPage from "./pages/ArtworkPage";
@@ -46,6 +47,7 @@ function App() {
       <footer className="tc-foot">
         <p>&copy; 2026 Annie Zhou. Vibe coded with Cursor, powered by Notion API.</p>
       </footer>
+      <Analytics />
     </div>
   );
 }
