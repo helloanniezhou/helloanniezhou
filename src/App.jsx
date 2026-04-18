@@ -5,6 +5,7 @@ import TwoColumnLayout from "./components/TwoColumnLayout";
 import AboutPage from "./pages/AboutPage";
 import ArtworkPage from "./pages/ArtworkPage";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
+import { Analytics } from "@vercel/analytics/react";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -31,6 +32,7 @@ function App() {
   return (
     <div className="page page--twocol">
       <ScrollToTop />
+      <Analytics />
       <BlockImageContextMenu />
       <div className="route-frame">
         <Routes>
