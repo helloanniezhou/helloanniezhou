@@ -5,11 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:vercel": "npx vercel dev",
     "build": "vite build",
     "preview": "vite preview",
-    "notion:sync": "node notion/fetchNotionBlocks.mjs"
+    "notion:sync": "node notion/fetchNotionBlocks.mjs",
+    "deploy:main": "bash scripts/deploy-main.sh"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.106.2",
     "@vercel/analytics": "^2.0.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",

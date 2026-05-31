@@ -1,23 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { usePublishedPosts } from "../../context/PublishedPostsContext";
 import { resolveNotionHref } from "../../lib/notionHref";
 
-function renderRun(run) {
+function renderStyledRun(run) {
   const text = run.text ?? "";
-  if (run.href) {
-    const resolved = resolveNotionHref(run.href);
-    if (resolved.kind === "internal") {
-      return <Link to={resolved.to}>{text}</Link>;
-    }
-    if (resolved.kind === "external") {
-      return (
-        <a href={resolved.href} target="_blank" rel="noreferrer">
-          {text}
-        </a>
-      );
-    }
-  }
-
   let el = text;
   if (run.code) {
     el = <code>{text}</code>;
@@ -35,6 +22,30 @@ function renderRun(run) {
 }
 
 function NotionRichText({ runs }) {
+  const { isProjectPathPublished } = usePublishedPosts();
+
+  function renderRun(run) {
+    const text = run.text ?? "";
+    if (run.href) {
+      const resolved = resolveNotionHref(run.href);
+      if (resolved.kind === "internal") {
+        if (!isProjectPathPublished(resolved.to)) {
+          return renderStyledRun(run);
+        }
+        return <Link to={resolved.to}>{text}</Link>;
+      }
+      if (resolved.kind === "external") {
+        return (
+          <a href={resolved.href} target="_blank" rel="noreferrer">
+            {text}
+          </a>
+        );
+      }
+    }
+
+    return renderStyledRun(run);
+  }
+
   if (!runs?.length) {
     return null;
   }

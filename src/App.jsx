@@ -4,8 +4,8 @@ import { Analytics } from "@vercel/analytics/react";
 import TwoColumnLayout from "./components/TwoColumnLayout";
 import AboutPage from "./pages/AboutPage";
 import ArtworkPage from "./pages/ArtworkPage";
+import CrmPage from "./pages/CrmPage";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
-import { Analytics } from "@vercel/analytics/react";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -36,6 +36,8 @@ function App() {
       <BlockImageContextMenu />
       <div className="route-frame">
         <Routes>
+          <Route path="/CRM" element={<CrmPage />} />
+          <Route path="/crm" element={<Navigate to="/CRM" replace />} />
           <Route element={<TwoColumnLayout />}>
             <Route path="/" element={<AboutPage />} />
             <Route path="/about" element={<Navigate to="/" replace />} />
@@ -49,8 +51,6 @@ function App() {
       <footer className="tc-foot">
         <p>&copy; 2026 Annie Zhou. Vibe coded with Cursor, powered by Notion API.</p>
       </footer>
-      
-      <Analytics />
     </div>
   );
 }
