@@ -8,7 +8,6 @@
     "dev:vercel": "npx vercel dev",
     "build": "vite build",
     "preview": "vite preview",
-    "notion:sync": "node notion/fetchNotionBlocks.mjs",
     "deploy:main": "bash scripts/deploy-main.sh"
   },
   "dependencies": {

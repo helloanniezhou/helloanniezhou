@@ -1,0 +1,282 @@
+{
+  "blocks": [
+    {
+      "id": "341bef17-e035-8073-a7a1-d75b61376919",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "2025",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "341bef17-e035-8030-9278-f44148f8272f",
+      "type": "unsupported",
+      "unsupported": true,
+      "rawType": "video"
+    },
+    {
+      "id": "341bef17-e035-80dc-b415-c947aad044ef",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Overview",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "341bef17-e035-8080-bb46-cb2318d9a834",
+      "type": "paragraph",
+      "richText": []
+    },
+    {
+      "id": "341bef17-e035-80a7-8f8a-db949c473086",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Role",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "341bef17-e035-80a9-91ce-f4e6fcc597be",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "I managed 3 direct reports and my team is responsible for AI-powered conversation feature where you can chat with a personal Health Coach. In addition to design work, I helped the org up-skill in AI-native design, improved process and tools for the team to work on AI. ",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "341bef17-e035-8046-8655-c00e44b42502",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Impact",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "341bef17-e035-805e-bf49-c95d7f5d727a",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Fitbit’s Personal Health Coach was launched in Q4 2025. ",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "341bef17-e035-804c-90ba-e72bb22e31c7",
+      "type": "divider"
+    },
+    {
+      "id": "341bef17-e035-8094-9362-ccf24e18b984",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Challenge",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "341bef17-e035-806a-9fe1-ff18387bd741",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Process",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "341bef17-e035-80ae-8be0-c83d69b64767",
+      "type": "heading_3",
+      "richText": []
+    },
+    {
+      "id": "341bef17-e035-8018-a488-e14c39c4bd4e",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Impact & result",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "341bef17-e035-80e5-aea4-e418ab85b7c1",
+      "type": "column_list",
+      "children": [
+        {
+          "id": "341bef17-e035-80de-92f8-c19cabea69cf",
+          "type": "column",
+          "children": [
+            {
+              "id": "341bef17-e035-80ff-91f6-d18c7321074a",
+              "type": "paragraph",
+              "richText": [
+                {
+                  "type": "text",
+                  "text": "Conversation starter",
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default",
+                  "href": null
+                }
+              ]
+            },
+            {
+              "id": "342bef17-e035-8067-acbe-f6b5c1acae01",
+              "type": "paragraph",
+              "richText": []
+            }
+          ],
+          "widthRatio": 0.5
+        },
+        {
+          "id": "341bef17-e035-80db-90d0-f180c0bc99d1",
+          "type": "column",
+          "children": [
+            {
+              "id": "341bef17-e035-800e-ae32-f288bf3fcb34",
+              "type": "image",
+              "url": "https://egzhalhdhfpeebpiwoud.supabase.co/storage/v1/object/public/notion-images/ask-health/341bef17e035800eae32f288bf3fcb34.webp",
+              "caption": [],
+              "maxWidth": "100%"
+            }
+          ],
+          "widthRatio": 0.5
+        }
+      ]
+    },
+    {
+      "id": "341bef17-e035-80d9-b9c3-d27be28741f9",
+      "type": "column_list",
+      "children": [
+        {
+          "id": "341bef17-e035-8025-8599-d0d7b989734b",
+          "type": "column",
+          "children": [
+            {
+              "id": "341bef17-e035-80cd-9af2-e422391e043f",
+              "type": "paragraph",
+              "richText": [
+                {
+                  "type": "text",
+                  "text": "In-workout coaching to keep you on track. ",
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default",
+                  "href": null
+                },
+                {
+                  "type": "text",
+                  "text": "Start one of your custom runs and get audio and haptic cues for when to sprint, cool down or maintain pace.",
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default",
+                  "href": null
+                }
+              ]
+            }
+          ],
+          "widthRatio": 0.5
+        },
+        {
+          "id": "341bef17-e035-8037-9b21-c424878599d3",
+          "type": "column",
+          "children": [
+            {
+              "id": "341bef17-e035-80ca-8be1-fa95a767b636",
+              "type": "image",
+              "url": "https://egzhalhdhfpeebpiwoud.supabase.co/storage/v1/object/public/notion-images/ask-health/341bef17e03580ca8be1fa95a767b636.webp",
+              "caption": [],
+              "maxWidth": "100%"
+            }
+          ],
+          "widthRatio": 0.5
+        }
+      ]
+    }
+  ],
+  "title": "Ask Health for Fitbit"
+}

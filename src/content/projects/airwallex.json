@@ -1,6 +1,4 @@
 {
-  "sourcePageId": "340bef17e035803f83fad63eb6340da4",
-  "fetchedAt": "2026-04-13T22:26:31.319Z",
   "blocks": [
     {
       "id": "340bef17-e035-8040-9992-cd740e6786e5",
@@ -22,7 +20,7 @@
     {
       "id": "341bef17-e035-8057-b64e-e383adc7093d",
       "type": "image",
-      "url": "/notion-images/airwallex/341bef17e0358057b64ee383adc7093d.png",
+      "url": "/project-images/airwallex/341bef17e0358057b64ee383adc7093d.png",
       "caption": [],
       "maxWidth": "100%"
     },
@@ -219,7 +217,29 @@
       "richText": [
         {
           "type": "text",
-          "text": "Airwallex's core payments infrastructure was powerful but lacked a lightweight no-code entry point for merchants who did not want API integrations. We saw growing demand from education providers, event organizers, and SMBs who needed something simpler in low-dev-resource environments.",
+          "text": "Airwallex's core payments infrastructure was powerful but lacked a lightweight no-code entry point for merchants who did not want API integrations. We saw ",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "growing demand from education providers, event organizers, and SMBs",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": " who needed something simpler in low-dev-resource environments.",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -270,7 +290,29 @@
       "richText": [
         {
           "type": "text",
-          "text": "To shape the direction of Payment Link, I partnered with UX to run surveys and interviews across markets. Merchants consistently wanted strong pricing, broad payment method coverage, integration with back-office tools, and flexible customer-facing customization.",
+          "text": "To shape the direction of Payment Link, I partnered with UX to run ",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "surveys and interviews ",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "across markets. Merchants consistently wanted strong pricing, broad payment method coverage, integration with back-office tools, and flexible customer-facing customization.",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -287,8 +329,19 @@
       "richText": [
         {
           "type": "text",
-          "text": "While many existing merchants were in Hong Kong and China, needs were highly localized and less aligned with early product capabilities. We identified clearer product-market fit in Australia, especially for e-commerce and professional services, and focused v1 there.",
+          "text": "While many existing merchants were in Hong Kong and China, needs were highly localized and less aligned with early product capabilities. We ",
           "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "identified clearer product-market fit in Australia, especially for e-commerce and professional services, and focused v1 there.",
+          "bold": true,
           "italic": false,
           "strikethrough": false,
           "underline": false,
@@ -321,7 +374,51 @@
       "richText": [
         {
           "type": "text",
-          "text": "I spoke with sales, marketing, and operations teams to understand the competitive landscape. Airwallex had a strong cross-border pricing edge, but we were missing key payment methods like AMEX and Discover in English-speaking markets.",
+          "text": "I spoke with sales, marketing, and operations teams to understand the competitive landscape. Airwallex had a ",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "strong cross-border pricing edge",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": ", but we were ",
+          "bold": false,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "missing key payment methods ",
+          "bold": true,
+          "italic": false,
+          "strikethrough": false,
+          "underline": false,
+          "code": false,
+          "color": "default",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": "like AMEX and Discover in English-speaking markets.",
           "bold": false,
           "italic": false,
           "strikethrough": false,
@@ -427,13 +524,13 @@
     {
       "id": "341bef17-e035-8079-91d8-f683a4709f29",
       "type": "image",
-      "url": "/notion-images/airwallex/341bef17e035807991d8f683a4709f29.png",
+      "url": "/project-images/airwallex/341bef17e035807991d8f683a4709f29.png",
       "caption": []
     },
     {
       "id": "341bef17-e035-809e-9791-e2c0a99cd26f",
       "type": "image",
-      "url": "/notion-images/airwallex/341bef17e035809e9791e2c0a99cd26f.jpg",
+      "url": "/project-images/airwallex/341bef17e035809e9791e2c0a99cd26f.jpg",
       "caption": [],
       "maxWidth": "80%"
     },

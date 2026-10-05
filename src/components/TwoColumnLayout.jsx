@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { usePublishedPosts } from "../context/PublishedPostsContext";
-import { listCaseStudiesForNav } from "../lib/notionProjects";
+import { listCaseStudiesForNav } from "../content/projects";
 import "./TwoColumnLayout.css";
 
 function linkClass({ isActive }) {
@@ -32,8 +32,8 @@ function ProjectsSideLink() {
 
 export default function TwoColumnLayout() {
   const { isSlugPublished } = usePublishedPosts();
-  const caseStudies = listCaseStudiesForNav().filter(({ slug }) =>
-    isSlugPublished(slug)
+  const caseStudies = listCaseStudiesForNav().filter(
+    ({ slug }) => isSlugPublished(slug)
   );
 
   return (

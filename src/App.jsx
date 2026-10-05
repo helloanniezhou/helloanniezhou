@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage";
 import ArtworkPage from "./pages/ArtworkPage";
 import CrmPage from "./pages/CrmPage";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
+import ScrollReveal from "./components/ScrollReveal";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -29,12 +30,14 @@ function BlockImageContextMenu() {
 }
 
 function App() {
+  const { pathname } = useLocation();
   return (
     <div className="page page--twocol">
       <ScrollToTop />
+      <ScrollReveal />
       <Analytics />
       <BlockImageContextMenu />
-      <div className="route-frame">
+      <div key={pathname} className="route-frame">
         <Routes>
           <Route path="/CRM" element={<CrmPage />} />
           <Route path="/crm" element={<Navigate to="/CRM" replace />} />
@@ -49,7 +52,7 @@ function App() {
       </div>
 
       <footer className="tc-foot">
-        <p>&copy; 2026 Annie Zhou. Vibe coded with Cursor, powered by Notion API.</p>
+        <p>&copy; 2026 Annie Zhou. Vibe coded with Cursor.</p>
       </footer>
     </div>
   );

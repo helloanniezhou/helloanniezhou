@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/((?!api/|assets/|cursors/|notion-images/|@vite|@id|@fs|src/|node_modules/).*)",
+      "source": "/((?!api/|assets/|cursors/|project-images/|@vite|@id|@fs|src/|node_modules/).*)",
       "destination": "/index.html"
     }
   ]

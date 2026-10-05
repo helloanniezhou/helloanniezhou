@@ -1,0 +1,254 @@
+{
+  "title": "Project Genie",
+  "blocks": [
+    {
+      "id": "overview-heading",
+      "type": "heading_3",
+      "richText": [
+        {
+          "text": "Overview",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "overview-video",
+      "type": "video",
+      "url": "https://www.youtube-nocookie.com/embed/YxkGdX4WIBE",
+      "title": "Project Genie — Experimenting with infinite interactive worlds"
+    },
+    {
+      "id": "overview",
+      "type": "paragraph",
+      "richText": [
+        {
+          "text": "I'm leading design for Project Genie",
+          "bold": true
+        },
+        {
+          "text": ", exploring how Google DeepMind’s "
+        },
+        {
+          "text": "latest frontier world model",
+          "bold": true
+        },
+        {
+          "text": " can enable new consumer experiences. I partner across product and research to shape product strategy and inform evolving model capabilities."
+        }
+      ]
+    },
+    {
+      "id": "links",
+      "type": "paragraph",
+      "richText": [
+        {
+          "text": "Explore the public Project Genie experience ↗",
+          "href": "https://labs.google/projectgenie"
+        }
+      ]
+    },
+    {
+      "id": "role-heading",
+      "type": "heading_3",
+      "richText": [
+        {
+          "text": "Role",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "role-design",
+      "type": "bulleted_list_item",
+      "richText": [
+        {
+          "text": "Lead UX design across a team of designers",
+          "bold": true
+        },
+        {
+          "text": ", setting the experience vision, design direction, and product principles."
+        }
+      ]
+    },
+    {
+      "id": "role-product",
+      "type": "bulleted_list_item",
+      "richText": [
+        {
+          "text": "Shape product direction and strategy with product managers and research scientists",
+          "bold": true
+        },
+        {
+          "text": ", translating emerging model capabilities into potential consumer use cases and bringing product and UX learnings into model development."
+        }
+      ]
+    },
+    {
+      "id": "divider",
+      "type": "divider"
+    },
+    {
+      "id": "challenge-heading",
+      "type": "heading_3",
+      "richText": [
+        {
+          "text": "The challenge",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "challenge",
+      "type": "paragraph",
+      "richText": [
+        {
+          "text": "The latest model is still taking shape.",
+          "bold": true
+        },
+        {
+          "text": " Product vision and model development need to inform each other. I lead the effort to explore what the latest model can enable through prototypes, bringing concrete product possibilities into the conversation with product managers and model research team."
+        }
+      ]
+    },
+    {
+      "id": "sprint-heading",
+      "type": "heading_3",
+      "richText": [
+        {
+          "text": "Prototype with the model.",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "sprint-intro",
+      "type": "paragraph",
+      "richText": [
+        {
+          "text": "I led cross-functional prototyping sprints",
+          "bold": true
+        },
+        {
+          "text": " to define a product vision and explore the latest model through prototypes. Working with the technology at an early stage helps us identify possible experiences and use cases."
+        }
+      ]
+    },
+    {
+      "id": "sprint-vision",
+      "type": "bulleted_list_item",
+      "richText": [
+        {
+          "text": "Define the vision. ",
+          "bold": true
+        },
+        {
+          "text": "Lead the cross-functional team in articulating a product vision around emerging model capabilities."
+        }
+      ]
+    },
+    {
+      "id": "sprint-prototypes",
+      "type": "bulleted_list_item",
+      "richText": [
+        {
+          "text": "Make the vision tangible. ",
+          "bold": true
+        },
+        {
+          "text": "Lead the prototyping effort, creating experiences with the early model to explore potential use cases."
+        }
+      ]
+    },
+    {
+      "id": "sprint-feedback",
+      "type": "bulleted_list_item",
+      "richText": [
+        {
+          "text": "Inform the next iteration. ",
+          "bold": true
+        },
+        {
+          "text": "Bring prototype learnings and model feedback to inform model hill-climbing and product opportunities."
+        }
+      ]
+    },
+    {
+      "id": "vision-heading",
+      "type": "heading_3",
+      "richText": [
+        {
+          "text": "Shape product direction",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "vision",
+      "type": "paragraph",
+      "richText": [
+        {
+          "text": "I work with the product managers to shape product direction, strategy, and roadmap.",
+          "bold": true
+        },
+        {
+          "text": " Our partnership connects emerging world-model capabilities with potential consumer use cases and the experiences we want to build. I set the UX vision and design direction, establishing interaction patterns and principles for a new category of AI experience."
+        }
+      ]
+    },
+    {
+      "id": "model-heading",
+      "type": "heading_3",
+      "richText": [
+        {
+          "text": "Feed product learnings back into the model",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "type": "paragraph",
+      "richText": [
+        {
+          "text": "I share model feedback with Research team",
+          "bold": true
+        },
+        {
+          "text": " from a product and UX perspective. Our prototypes and learnings inform the direction of model improvement and help identify potential use cases."
+        }
+      ]
+    },
+    {
+      "id": "feedback-loop",
+      "type": "quote",
+      "richText": [
+        {
+          "text": "Emerging model capabilities → prototypes → product learnings → model direction"
+        }
+      ]
+    },
+    {
+      "id": "team-heading",
+      "type": "heading_3",
+      "richText": [
+        {
+          "text": "Lead the design team",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "team",
+      "type": "paragraph",
+      "richText": [
+        {
+          "text": "I lead a team of designers",
+          "bold": true
+        },
+        {
+          "text": " across disciplines. Across parallel workstreams, I create coherence through shared interaction patterns, product principles, and a clear experience strategy."
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,4 @@
 {
-  "sourcePageId": "340bef17e03580a59b27cdd340bf93e1",
-  "fetchedAt": "2026-04-13T22:26:27.346Z",
   "blocks": [
     {
       "id": "340bef17-e035-8070-acee-f2ad71eca57d",
@@ -22,7 +20,7 @@
     {
       "id": "341bef17-e035-804c-bbe2-c884f9c11af7",
       "type": "image",
-      "url": "/notion-images/google-go/341bef17e035804cbbe2c884f9c11af7.jpg",
+      "url": "/project-images/google-go/341bef17e035804cbbe2c884f9c11af7.jpg",
       "caption": []
     },
     {
@@ -147,6 +145,10 @@
       "children": []
     },
     {
+      "id": "341bef17-e035-8095-a819-c965326ee911",
+      "type": "divider"
+    },
+    {
       "id": "340bef17-e035-807a-b42c-eb4313e31742",
       "type": "heading_3",
       "richText": [
@@ -254,7 +256,7 @@
             {
               "id": "340bef17-e035-803d-9c95-e32ac94d30e0",
               "type": "image",
-              "url": "/notion-images/google-go/340bef17e035803d9c95e32ac94d30e0.gif",
+              "url": "/project-images/google-go/340bef17e035803d9c95e32ac94d30e0.gif",
               "caption": [],
               "maxWidth": 275
             }
@@ -320,7 +322,7 @@
             {
               "id": "341bef17-e035-8058-8774-d52f5ff52f03",
               "type": "image",
-              "url": "/notion-images/google-go/341bef17e03580588774d52f5ff52f03.png",
+              "url": "/project-images/google-go/341bef17e03580588774d52f5ff52f03.png",
               "caption": [],
               "maxWidth": 300
             }
@@ -374,7 +376,7 @@
             {
               "id": "340bef17-e035-80b7-81b7-ef5932678f5d",
               "type": "image",
-              "url": "/notion-images/google-go/340bef17e03580b781b7ef5932678f5d.gif",
+              "url": "/project-images/google-go/340bef17e03580b781b7ef5932678f5d.gif",
               "caption": [],
               "maxWidth": 275
             }

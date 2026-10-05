@@ -1,0 +1,604 @@
+{
+  "title": "Google Health & Pixel Watch",
+  "blocks": [
+    {
+      "id": "health-project-summary",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Turning wearable insights into everyday guidance—from fitness tracking to AI-powered coaching."
+        }
+      ]
+    },
+    {
+      "id": "health-overview-heading",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Overview",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "health-overview-hero",
+      "type": "image",
+      "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/HealthApp-2-Onboarding_Hero_1.width-1200.format-webp.webp",
+      "alt": "Google Health Coach onboarding and personalized coaching screens",
+      "maxWidth": "100%",
+      "caption": [
+        {
+          "type": "text",
+          "text": "Google Health Coach: personalized guidance informed by your goals and health data. · "
+        },
+        {
+          "type": "text",
+          "text": "Source: Google",
+          "href": "https://blog.google/products-and-platforms/products/google-health/google-health-coach/"
+        }
+      ]
+    },
+    {
+      "id": "health-2",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "I led design across Google Health Coach and Pixel Watch 3 fitness",
+          "bold": true
+        },
+        {
+          "type": "text",
+          "text": ", helping people turn wearable data into useful guidance.",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "id": "health-3",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "",
+          "bold": false
+        },
+        {
+          "type": "text",
+          "text": "I led Google Health Coach, managing 3 designers",
+          "bold": true
+        },
+        {
+          "type": "text",
+          "text": " on an AI-powered coaching experience informed by biometric data from Pixel Watch and Fitbit wearables. My work included ",
+          "bold": false
+        },
+        {
+          "type": "text",
+          "text": "early AI fitness exploration",
+          "bold": true
+        },
+        {
+          "type": "text",
+          "text": ", ",
+          "bold": false
+        },
+        {
+          "type": "text",
+          "text": "internal prototyping and evaluation of coaching responses",
+          "bold": true
+        },
+        {
+          "type": "text",
+          "text": ", and ",
+          "bold": false
+        },
+        {
+          "type": "text",
+          "text": "AI education for designers",
+          "bold": true
+        },
+        {
+          "type": "text",
+          "text": ".",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "id": "health-4",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "I partnered with product managers to define fitness strategy for Pixel Watch 3 and led the end-to-end experience across watch and mobile through launch. My team ",
+          "bold": false
+        },
+        {
+          "type": "text",
+          "text": "defined the updated Daily Readiness score experience and the structured workout experience",
+          "bold": true
+        },
+        {
+          "type": "text",
+          "text": ", connecting recovery insights with actionable training guidance.",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "id": "health-7-divider",
+      "type": "divider"
+    },
+    {
+      "id": "health-7",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "The experiences we delivered",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "health-8",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Google Health Coach: making wearable data actionable",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "health-9",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "I led design for Google Health Coach",
+          "bold": true
+        },
+        {
+          "type": "text",
+          "text": ", helping people connect their biometric data with their goals and everyday questions.",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "id": "health-10",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "The opportunity was to move beyond understanding individual metrics toward ",
+          "bold": false
+        },
+        {
+          "type": "text",
+          "text": "personalized guidance",
+          "bold": true
+        },
+        {
+          "type": "text",
+          "text": ": helping people decide what to do next based on signals from their Pixel Watch and Fitbit wearables.",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "id": "coach-public-preview",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Explore Fitbit’s AI-powered personal health coach ↗",
+          "href": "https://blog.google/products-and-platforms/devices/fitbit/personal-health-coach-public-preview/"
+        }
+      ]
+    },
+    {
+      "id": "ask-health-gallery",
+      "type": "column_list",
+      "layout": "gallery",
+      "children": [
+        {
+          "id": "ask-health-column-0",
+          "type": "column",
+          "children": [
+            {
+              "id": "health-11",
+              "type": "image",
+              "url": "/project-images/ask-health/HealthCoach_Inline.width-2000.format-webp.webp",
+              "alt": "Fitbit dashboard with personalized sleep insights and an Ask Coach entry point",
+              "caption": [
+                {
+                  "text": "Connecting sleep and recovery metrics with personalized coaching."
+                }
+              ],
+              "presentation": "phone-dashboard"
+            }
+          ]
+        },
+        {
+          "id": "ask-health-column-1",
+          "type": "column",
+          "children": [
+            {
+              "id": "health-29",
+              "type": "image",
+              "url": "/project-images/ask-health/Ask_Coach.width-1000.format-webp.webp",
+              "alt": "Ask Coach conversation starters for fitness plans, activity highlights, and sleep recovery",
+              "caption": [
+                {
+                  "text": "Ask Coach: a conversational entry point to explore data and update fitness plans."
+                }
+              ],
+              "presentation": "phone-chat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "health-12",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Pixel Watch 3: balancing training and recovery",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "fitness-intro",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "I led the end-to-end fitness experience for Pixel Watch 3 through launch.",
+          "bold": true
+        },
+        {
+          "type": "text",
+          "text": " My team defined the updated Daily Readiness score experience and Structured Workouts, connecting recovery insights with actionable training guidance.",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "id": "readiness-equal",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Daily Readiness score. ",
+          "bold": true
+        },
+        {
+          "type": "text",
+          "text": "Help people understand how their body is recovering using heart-rate variability, resting heart rate, and recent sleep. Alongside Cardio Load and Target Load, the experience helps people decide how much activity to aim for each day.",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "id": "workouts-equal",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Structured Workouts. ",
+          "bold": true
+        },
+        {
+          "type": "text",
+          "text": "Help people build custom runs with warmups, intervals, cooldowns, and heart-rate or pace targets. Audio and haptic cues guide them through each segment, while advanced running metrics help them reflect on performance afterward.",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "id": "pixel-watch-launch",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Explore Pixel Watch 3’s fitness and recovery features ↗",
+          "href": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-watch-3/"
+        }
+      ]
+    },
+    {
+      "id": "fitness-gallery",
+      "type": "column_list",
+      "layout": "fitness-gallery",
+      "children": [
+        {
+          "id": "fitness-gallery-0",
+          "type": "column",
+          "children": [
+            {
+              "id": "health-16",
+              "type": "image",
+              "url": "/project-images/fitness-for-fitbit/readiness-watch-only.png",
+              "alt": "Daily Readiness and Cardio Load on Pixel Watch with its grey band",
+              "caption": [
+                {
+                  "text": "Daily Readiness: recovery insights on your wrist."
+                }
+              ],
+              "maxWidth": "100%"
+            }
+          ]
+        },
+        {
+          "id": "fitness-gallery-1",
+          "type": "column",
+          "children": [
+            {
+              "id": "fitness-workout-overview",
+              "type": "image",
+              "url": "/project-images/fitness-for-fitbit/340bef17e0358043a062ca8ec62b52d3.webp",
+              "alt": "A structured interval run on mobile and the Pixel Watch workout builder",
+              "caption": [
+                {
+                  "type": "text",
+                  "text": "Structured workouts: customizable segments across mobile and watch."
+                }
+              ],
+              "maxWidth": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "health-17-divider",
+      "type": "divider"
+    },
+    {
+      "id": "health-17",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "Three decisions that shaped the work",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "health-18",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "1. Initiated AI fitness coaching",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "health-19",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "I kicked off exploration into personalized AI fitness guidance, helping lay the groundwork for the later coach effort. I subsequently led design for Google Health Coach, an AI-powered chat experience that can guide the users on their fitness, sleep, and recovery.",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "id": "health-23-divider",
+      "type": "divider"
+    },
+    {
+      "id": "health-23",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "2. Made coaching quality testable",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "health-24",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "I initiated an effort to prototype coaching responses across scenarios and worked with UX writers and research scientists to define evaluation criteria. This work collected feedback from testing realistic AI outputs, informed product improvements, and built the team’s confidence in the AI’s quality.",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "id": "coach-response-gallery",
+      "type": "column_list",
+      "layout": "gallery",
+      "children": [
+        {
+          "id": "response-column-0",
+          "type": "column",
+          "children": [
+            {
+              "id": "response-image-0",
+              "type": "image",
+              "url": "/project-images/ask-health/hands_on_PHA_inline_a.width-2000.format-webp.webp",
+              "alt": "Ask Coach conversation about a high-protein recipe",
+              "presentation": "phone-chat",
+              "caption": [
+                {
+                  "type": "text",
+                  "text": "A conversation that builds on a person’s interests and goals."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "response-column-1",
+          "type": "column",
+          "children": [
+            {
+              "id": "response-image-1",
+              "type": "image",
+              "url": "/project-images/ask-health/hands_on_PHA_inline_c.width-2000.format-webp.webp",
+              "alt": "Ask Coach explaining sleep schedule patterns and energy",
+              "presentation": "phone-chat",
+              "caption": [
+                {
+                  "type": "text",
+                  "text": "Sleep insights become a starting point for deeper conversation."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "health-30-divider",
+      "type": "divider"
+    },
+    {
+      "id": "health-30",
+      "type": "heading_3",
+      "richText": [
+        {
+          "type": "text",
+          "text": "3. Connected recovery to training",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "health-31",
+      "type": "paragraph",
+      "richText": [
+        {
+          "type": "text",
+          "text": "For Pixel Watch 3, I shaped a shared long-term fitness vision across watch and mobile. My team designed recovery insights, and proposed customizable structured workouts to support different training methods. I helped up-skill the team to prototype and test directly on wearable devices, enabling more realistic user feedback than computer-based testing and improving the quality of our design.",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "id": "workout-gallery",
+      "type": "column_list",
+      "layout": "fitness-gallery",
+      "children": [
+        {
+          "id": "workout-gallery-0",
+          "type": "column",
+          "children": [
+            {
+              "id": "health-35",
+              "type": "image",
+              "url": "/project-images/fitness-for-fitbit/340bef17e0358043a062ca8ec62b52d3.webp",
+              "alt": "A structured interval run on mobile and the Pixel Watch workout builder",
+              "caption": [
+                {
+                  "type": "text",
+                  "text": "Structured workouts: customizable segments across mobile and watch."
+                }
+              ],
+              "maxWidth": "100%"
+            }
+          ]
+        },
+        {
+          "id": "workout-gallery-1",
+          "type": "column",
+          "children": [
+            {
+              "id": "health-38",
+              "type": "image",
+              "url": "/project-images/fitness-for-fitbit/341bef17e03580508f66c440a93874dd.png",
+              "alt": "Post-run form analysis comparing step cadence against the user’s personal range",
+              "caption": [
+                {
+                  "type": "text",
+                  "text": "Post-run analysis helps people reflect on their running performance."
+                }
+              ],
+              "maxWidth": "100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "detail-gallery-divider",
+      "type": "divider"
+    },
+    {
+      "id": "detail-gallery-title",
+      "type": "heading_3",
+      "richText": [
+        {
+          "text": "A closer look at Pixel Watch 3",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "id": "detail-gallery-0",
+      "type": "image",
+      "url": "/project-images/fitness-for-fitbit/readiness-watch-only.png",
+      "alt": "Pixel Watch showing recovery and training insights.",
+      "maxWidth": "100%",
+      "caption": [
+        {
+          "text": "Daily Readiness and Cardio Load"
+        }
+      ]
+    },
+    {
+      "id": "detail-gallery-1",
+      "type": "image",
+      "url": "/project-images/fitness-for-fitbit/340bef17e0358043a062ca8ec62b52d3.webp",
+      "alt": "Custom run setup across mobile and Pixel Watch.",
+      "maxWidth": "100%",
+      "caption": [
+        {
+          "text": "Build a structured workout"
+        }
+      ]
+    },
+    {
+      "id": "detail-gallery-2",
+      "type": "image",
+      "url": "/project-images/fitness-for-fitbit/341bef17e0358094807cd0561565890e.png",
+      "alt": "Warmups, intervals, and cooldowns with live workout metrics.",
+      "maxWidth": "100%",
+      "caption": [
+        {
+          "text": "In-workout guidance"
+        }
+      ]
+    },
+    {
+      "id": "detail-gallery-3",
+      "type": "image",
+      "url": "/project-images/fitness-for-fitbit/341bef17e03580508f66c440a93874dd.png",
+      "alt": "Running form analysis and personal performance ranges.",
+      "maxWidth": "100%",
+      "caption": [
+        {
+          "text": "Post-run analysis"
+        }
+      ]
+    }
+  ]
+}

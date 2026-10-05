@@ -1,57 +1,22 @@
 {
-  "sourcePageId": "340bef17e03580d6a55adfa2e2c82c7c",
-  "fetchedAt": "2026-04-13T22:26:24.260Z",
   "blocks": [
     {
-      "id": "341bef17-e035-80e9-8f7e-c9df08d44ecd",
+      "id": "google-labs-project-genie",
       "type": "bulleted_list_item",
       "richText": [
         {
-          "type": "text",
-          "text": "Google Labs ",
+          "text": "Google Labs — Project Genie",
           "bold": true,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
+          "href": "/projects/project-genie"
         },
         {
-          "type": "text",
-          "text": "— Prototyped 0→1 AI product concepts. Check out ",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
+          "text": " — leading design for Google DeepMind’s frontier world model by prototyping with early-stage model to inform product vision, potential use cases, and model direction. "
         },
         {
-          "type": "text",
-          "text": "Google Labs ↗",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": "https://labs.google/"
-        },
-        {
-          "type": "text",
-          "text": ". ",
-          "bold": false,
-          "italic": false,
-          "strikethrough": false,
-          "underline": false,
-          "code": false,
-          "color": "default",
-          "href": null
+          "text": "Project Genie ↗",
+          "href": "https://labs.google/projectgenie"
         }
-      ],
-      "children": []
+      ]
     },
     {
       "id": "341bef17-e035-8028-98de-e35aefdb0540",
@@ -66,7 +31,7 @@
           "underline": false,
           "code": false,
           "color": "default",
-          "href": "/213bef17e03580d0bce1d98d4f0ebfd4"
+          "href": "/projects/fitness-for-fitbit"
         },
         {
           "type": "text",
@@ -106,7 +71,7 @@
           "underline": false,
           "code": false,
           "color": "default",
-          "href": "/340bef17e03580a59b27cdd340bf93e1"
+          "href": "/projects/google-go"
         },
         {
           "type": "text",
@@ -146,7 +111,7 @@
           "underline": false,
           "code": false,
           "color": "default",
-          "href": "/340bef17e035803f83fad63eb6340da4"
+          "href": "/projects/airwallex"
         },
         {
           "type": "text",

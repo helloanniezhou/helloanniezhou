@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { usePublishedPosts } from "../../context/PublishedPostsContext";
-import { resolveNotionHref } from "../../lib/notionHref";
+import { resolveContentHref } from "../../lib/contentHref";
 
 function renderStyledRun(run) {
   const text = run.text ?? "";
@@ -16,28 +16,28 @@ function renderStyledRun(run) {
     el = <s>{el}</s>;
   }
   if (run.underline) {
-    el = <span className="notion-underline">{el}</span>;
+    el = <span className="content-underline">{el}</span>;
   }
   return el;
 }
 
-function NotionRichText({ runs }) {
+function RichText({ runs }) {
   const { isProjectPathPublished } = usePublishedPosts();
 
   function renderRun(run) {
     const text = run.text ?? "";
     if (run.href) {
-      const resolved = resolveNotionHref(run.href);
+      const resolved = resolveContentHref(run.href);
       if (resolved.kind === "internal") {
         if (!isProjectPathPublished(resolved.to)) {
           return renderStyledRun(run);
         }
-        return <Link to={resolved.to}>{text}</Link>;
+        return <Link to={resolved.to}>{renderStyledRun(run)}</Link>;
       }
       if (resolved.kind === "external") {
         return (
           <a href={resolved.href} target="_blank" rel="noreferrer">
-            {text}
+            {renderStyledRun(run)}
           </a>
         );
       }
@@ -52,7 +52,7 @@ function NotionRichText({ runs }) {
 
   /* Single wrapper so parents (e.g. flex column `li`) don’t stack each run on its own line */
   return (
-    <span className="notion-rich-text">
+    <span className="content-rich-text">
       {runs.map((run, i) => (
         <React.Fragment key={`${i}-${run.text ?? ""}`}>{renderRun(run)}</React.Fragment>
       ))}
@@ -60,4 +60,4 @@ function NotionRichText({ runs }) {
   );
 }
 
-export default NotionRichText;
+export default RichText;
