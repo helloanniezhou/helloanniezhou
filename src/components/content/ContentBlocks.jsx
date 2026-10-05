@@ -92,7 +92,15 @@ function ContentBlock({ block }) {
     if (/\.(mp4|webm|ogg|mov)(?:[?#]|$)/i.test(block.url)) {
       return (
         <div className="content-block content-video">
-          <video src={block.url} playsInline controls aria-label={block.title || "Project video"} />
+          <video
+            src={block.url}
+            autoPlay={block.autoPlay === true}
+            muted={block.muted === true}
+            loop={block.loop === true}
+            playsInline
+            controls
+            aria-label={block.title || "Project video"}
+          />
         </div>
       );
     }

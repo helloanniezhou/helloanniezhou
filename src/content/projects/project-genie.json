@@ -254,6 +254,9 @@
       "id": "project-genie-demo",
       "type": "video",
       "url": "/project-images/project-genie/projectGenie.mp4",
+      "autoPlay": true,
+      "muted": true,
+      "loop": true,
       "title": "Project Genie demo"
     }
   ]
