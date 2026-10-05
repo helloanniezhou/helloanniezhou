@@ -10,10 +10,10 @@
   --space-3: 1.5rem;
 
   /* Type scale */
-  --tc-s: 0.875rem;
-  --tc-m: 1.25 rem;
-  --tc-l: 1.5rem;
-  --tc-xl: 1.75rem;
+  --tc-s: 1.1375rem;
+  --tc-m: 1.3rem;
+  --tc-l: 1.95rem;
+  --tc-xl: 2.275rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -70,6 +70,7 @@ body,
 }
 
 body {
+  font-size: var(--tc-m);
   font-family: "Instrument Sans", sans-serif;
   color: var(--tc-black);
 }
@@ -127,11 +128,15 @@ img {
 
 .intro-text {
   margin: 0;
-  font-size: var(--tc-l);
+  font-size: 1.75rem;
   font-weight: 300;
   color: var(--tc-black);
   line-height: 1.55;
   padding-bottom: 1rem;
+}
+
+.intro-text--body {
+  font-size: var(--tc-m);
 }
 
 @media (max-width: 1200px) {
@@ -143,5 +148,10 @@ img {
 @media (max-width: 768px) {
   .page {
     padding: 26px 16px 32px;
+  }
+
+  .page.page--twocol {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }

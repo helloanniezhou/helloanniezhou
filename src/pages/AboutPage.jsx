@@ -1,7 +1,6 @@
 import React, { useLayoutEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import ContentBlocks from "../components/content/ContentBlocks";
-import aboutData from "../data/about";
 import aboutProjectsDoc from "../content/about-projects.json";
 
 
@@ -10,7 +9,6 @@ function AboutPage() {
   const location = useLocation();
   const prevPathRef = useRef(undefined);
 
-  const { workExperience, education } = aboutData;
   const projectBlocks = aboutProjectsDoc?.blocks;
   const hasProjects = Boolean(projectBlocks?.length);
 
@@ -42,7 +40,7 @@ function AboutPage() {
       <p className="intro-text">
         <strong>I&apos;m a product and design leader with 10+ years building 0→1 experiences across AI and consumer products.</strong>
       </p>
-      <p className="intro-text">
+      <p className="intro-text intro-text--body">
         My work combines AI-native design, consumer product intuition, and product strategy, drawing on a background in human-centered design and a Harvard MBA. I currently lead design for Project Genie at Google Labs. Find me on{" "}
         <a href="https://www.linkedin.com/in/annieyezhou/" target="_blank" rel="noreferrer">
           LinkedIn
@@ -59,25 +57,6 @@ function AboutPage() {
         </div>
       ) : null}
 
-      <div className="resume-section">
-        <h2>Work experience</h2>
-        {workExperience.map((item) => (
-          <div key={`${item.time}-${item.role}`} className="md-item">
-            <span className="md-time">{item.time}</span>
-            <p className="md-title">{item.role}</p>
-            <span className="md-place">{item.location}</span>
-          </div>
-        ))}
-
-        <h2>Education</h2>
-        {education.map((item) => (
-          <div key={`${item.time}-${item.role}`} className="md-item">
-            <span className="md-time">{item.time}</span>
-            <p className="md-title">{item.role}</p>
-            <span className="md-place">{item.location}</span>
-          </div>
-        ))}
-      </div>
     </article>
   );
 }

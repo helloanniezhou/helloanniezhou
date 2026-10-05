@@ -5,7 +5,8 @@
   aspect-ratio: 16 / 9;
 }
 
-.content-video iframe {
+.content-video iframe,
+.content-video video {
   display: block;
   width: 100%;
   height: 100%;

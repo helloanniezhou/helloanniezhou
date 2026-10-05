@@ -221,7 +221,7 @@ article.project-doc ul li figure[data-viz="bars"] i {
 
 article.project-doc ul li > i:first-child {
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: var(--tc-l);
   line-height: 1;
 }
 

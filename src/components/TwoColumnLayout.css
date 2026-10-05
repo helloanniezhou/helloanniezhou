@@ -185,6 +185,17 @@ article.project-doc .md {
   color: var(--tc-grey);
 }
 
+.resume-intro {
+  margin: 0 0 1rem;
+  font-size: var(--tc-m);
+  line-height: 1.55;
+}
+
+.resume-name {
+  font-size: 1.625rem;
+  font-weight: 700;
+}
+
 .resume-section {
   display: flex;
   flex-direction: column;
@@ -277,16 +288,76 @@ body:has(.page--twocol) {
   color: var(--tc-black);
 }
 
-@media (max-width: 640px) {
+.tc-menu-toggle {
+  display: none;
+}
+
+@media (max-width: 1024px) {
   .tc {
     flex-direction: column;
     gap: 2rem;
   }
 
+  .tc-body {
+    width: 100%;
+    align-items: center;
+  }
+
+  .tc-body > article {
+    width: 100%;
+  }
+
   .tc-side {
+    display: none;
     position: static;
     max-height: none;
     overflow-y: visible;
     align-self: stretch;
+  }
+
+  .tc-menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0.5rem;
+    border: 0;
+    background: transparent;
+    color: var(--tc-black);
+    font: inherit;
+  }
+
+  .tc-side--open {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    background: var(--surface-card);
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .tc-side .tc-a {
+    display: block;
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+    line-height: 1.2;
+    padding: 0.25rem 0;
+    overflow-wrap: anywhere;
+  }
+
+  .tc-side .tc-stack--tight {
+    padding-left: 1rem;
+    gap: 0.5rem;
+  }
+
+  .tc-menu-close {
+    flex-shrink: 0;
   }
 }

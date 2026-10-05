@@ -88,6 +88,14 @@ function ContentBlock({ block }) {
   }
 
   if (t === "video") {
+    if (!block.url) return null;
+    if (/\.(mp4|webm|ogg|mov)(?:[?#]|$)/i.test(block.url)) {
+      return (
+        <div className="content-block content-video">
+          <video src={block.url} playsInline controls aria-label={block.title || "Project video"} />
+        </div>
+      );
+    }
     return (
       <div className="content-block content-video">
         <iframe

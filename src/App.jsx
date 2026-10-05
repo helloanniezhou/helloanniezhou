@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import TwoColumnLayout from "./components/TwoColumnLayout";
 import AboutPage from "./pages/AboutPage";
 import ArtworkPage from "./pages/ArtworkPage";
+import ResumePage from "./pages/ResumePage";
 import CrmPage from "./pages/CrmPage";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
 import ScrollReveal from "./components/ScrollReveal";
@@ -45,6 +46,7 @@ function App() {
             <Route path="/" element={<AboutPage />} />
             <Route path="/about" element={<Navigate to="/" replace />} />
             <Route path="/projects/:slug" element={<ProjectDetailPage />} />
+            <Route path="/resume" element={<ResumePage />} />
             <Route path="/artwork" element={<ArtworkPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
