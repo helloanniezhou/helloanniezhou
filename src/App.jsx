@@ -52,7 +52,7 @@ function App() {
       </div>
 
       <footer className="tc-foot">
-        <p>&copy; 2026 Annie Zhou. Vibe coded with Cursor.</p>
+        <p>Designed and developed by Annie Zhou</p>
       </footer>
     </div>
   );
