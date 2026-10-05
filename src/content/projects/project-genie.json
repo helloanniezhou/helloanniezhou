@@ -38,12 +38,6 @@
       ]
     },
     {
-      "id": "project-genie-demo",
-      "type": "video",
-      "url": "/project-images/project-genie/projectGenie.mp4",
-      "title": "Project Genie demo"
-    },
-    {
       "id": "links",
       "type": "paragraph",
       "richText": [
@@ -255,6 +249,12 @@
           "text": " across disciplines. Across parallel workstreams, I create coherence through shared interaction patterns, product principles, and a clear experience strategy."
         }
       ]
+    },
+    {
+      "id": "project-genie-demo",
+      "type": "video",
+      "url": "/project-images/project-genie/projectGenie.mp4",
+      "title": "Project Genie demo"
     }
   ]
 }
