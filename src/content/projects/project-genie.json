@@ -38,6 +38,12 @@
       ]
     },
     {
+      "id": "project-genie-demo",
+      "type": "video",
+      "url": "/project-images/project-genie/projectGenie.mp4",
+      "title": "Project Genie demo"
+    },
+    {
       "id": "links",
       "type": "paragraph",
       "richText": [
